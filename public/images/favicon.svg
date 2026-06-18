@@ -1,0 +1,13 @@
+<svg xmlns="http://w3.org" viewBox="0 0 32 32" width="100%" height="100%">
+  <!-- Conexiones -->
+  <line x1="6" y1="16" x2="16" y2="6" stroke="#5fa0fe" stroke-width="2.5" />
+  <line x1="16" y1="6" x2="26" y2="16" stroke="#00ce67" stroke-width="2.5" />
+  <line x1="6" y1="16" x2="16" y2="26" stroke="#00ce67" stroke-width="2.5" />
+  <line x1="16" y1="26" x2="26" y2="16" stroke="#5fa0fe" stroke-width="2.5" />
+  <line x1="6" y1="16" x2="26" y2="16" stroke="#efe5e5" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.4" />
+  <!-- Nodos -->
+  <circle cx="16" cy="6" r="4" fill="#00ce67" />
+  <circle cx="6" cy="16" r="4" fill="#5fa0fe" />
+  <circle cx="26" cy="16" r="4" fill="#5fa0fe" />
+  <circle cx="16" cy="26" r="4" fill="#00ce67" />
+</svg>
