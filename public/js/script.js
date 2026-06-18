@@ -1,24 +1,41 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('.tab');
-    const tabContents = document.querySelectorAll('.tab-content');
+document.addEventListener('DOMContentLoaded', function () {
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const contentId = tab.getAttribute('data-content');
-            const contentToShow = document.getElementById(contentId);
-            tabContents.forEach(content => {
-                content.classList.remove('active-content');
-            });
-            contentToShow.classList.add('active-content');
-        });
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.tab-panel');
+  const noTab = document.getElementById('content-no-tab');
+
+  function activateTab(targetId) {
+    tabs.forEach(t => {
+      const isActive = t.dataset.content === targetId;
+      t.classList.toggle('active-tab', isActive);
+      t.setAttribute('aria-selected', isActive);
     });
-});
 
-const tabs = document.querySelectorAll('.tab');
-
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active-tab'));
-        tab.classList.add('active-tab');
+    panels.forEach(p => {
+      p.classList.remove('active');
     });
+
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.classList.add('active');
+    }
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      const targetId = this.dataset.content;
+
+      if (this.classList.contains('active-tab')) {
+        this.classList.remove('active-tab');
+        this.setAttribute('aria-selected', 'false');
+        panels.forEach(p => p.classList.remove('active'));
+        if (noTab) noTab.classList.add('active');
+        return;
+      }
+
+      activateTab(targetId);
+    });
+  });
+
+  if (noTab) noTab.classList.add('active');
 });
