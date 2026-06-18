@@ -39,7 +39,7 @@ body {
   font-size: 16px;
   line-height: 1.65;
   min-height: 100vh;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 /* ============================================================
@@ -136,6 +136,27 @@ header {
    ============================================================ */
 .hero {
   margin-bottom: 48px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 206, 103, 0.4);
+  box-shadow: 0 0 24px rgba(245, 68, 252, 0.15);
 }
 
 .greeting {
@@ -277,22 +298,70 @@ h1 {
 }
 
 /* ============================================================
-   GIF — responsive sin romperse
+   KNOWLEDGE GRAPH VISUAL (reemplaza al GIF)
    ============================================================ */
-.gif-container {
+.kg-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 16px 0;
+  padding: 12px 0 4px;
 }
 
-#miGif {
+#kgSvg {
   width: 100%;
-  max-width: 560px;
   height: auto;
   display: block;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+}
+
+#kgSvg circle.kg-node {
+  fill: var(--bg-card2);
+  stroke-width: 1.5;
+  cursor: default;
+}
+
+#kgSvg circle.kg-node.n-hermes {
+  fill: rgba(245, 68, 252, 0.12);
+  stroke: var(--magenta);
+}
+
+#kgSvg circle.kg-node.n-entity {
+  fill: rgba(0, 206, 103, 0.1);
+  stroke: var(--green);
+}
+
+#kgSvg circle.kg-node.n-concept {
+  fill: rgba(95, 160, 254, 0.1);
+  stroke: var(--blue);
+}
+
+#kgSvg text.kg-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--text);
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+#kgSvg line.kg-edge {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+#kgSvg circle.kg-pulse {
+  fill: none;
+  stroke-width: 1.5;
+  opacity: 0;
+  animation: kgPulse 4s ease-out infinite;
+}
+
+#kgSvg circle.kg-pulse.p-hermes  { stroke: var(--magenta); }
+#kgSvg circle.kg-pulse.p-entity  { stroke: var(--green); }
+#kgSvg circle.kg-pulse.p-concept { stroke: var(--blue); }
+
+@keyframes kgPulse {
+  0%   { r: 6;  opacity: 0.6; }
+  70%  { r: 30; opacity: 0; }
+  100% { r: 30; opacity: 0; }
 }
 
 /* ============================================================
@@ -647,7 +716,7 @@ h1 {
    ============================================================ */
 footer {
   text-align: center;
-  padding: 16px 24px;
+  padding: 10px 24px;
   border-top: 1px solid var(--border);
   position: relative;
   z-index: 1;
@@ -660,6 +729,78 @@ footer p {
 }
 
 /* ============================================================
+   RESEARCH / INVESTIGACIÓN
+   ============================================================ */
+.research-intro {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.8;
+  max-width: 100%;
+}
+
+.research-intro em {
+  color: var(--blue);
+  font-style: italic;
+}
+
+.research-intro strong {
+  color: var(--green);
+}
+
+.advisors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+}
+
+.advisors-list li {
+  padding: 12px 0 12px 16px !important;
+  border-bottom: 1px solid rgba(245, 68, 252, 0.1);
+}
+
+.advisors-list li:last-child {
+  border-bottom: none;
+}
+
+.advisor-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.advisor-role {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--green);
+  margin-top: 2px;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.research-tags span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--magenta);
+  background: rgba(245, 68, 252, 0.08);
+  border: 1px solid rgba(245, 68, 252, 0.25);
+  border-radius: 3px;
+  padding: 5px 12px;
+}
+
+/* ============================================================
+   PUBLICATION META (conferencias, etc.)
+   ============================================================ */
+.pub-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+/* ============================================================
    RESPONSIVE — mobile first adjustments
    ============================================================ */
 @media (max-width: 600px) {
@@ -667,8 +808,34 @@ footer p {
     padding: 32px 16px 24px;
   }
 
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-photo {
+    order: -1;
+  }
+
+  .hero-photo img {
+    width: 96px;
+    height: 96px;
+  }
+
   .tabs-wrapper {
     padding: 20px 16px;
+  }
+
+  #content-no-tab {
+    margin: -20px -16px;
+  }
+
+  .kg-container {
+    padding: 8px 0 0;
+  }
+
+  #kgSvg {
+    max-width: 100%;
   }
 
   .tabs-nav {

@@ -2,15 +2,17 @@ const i18n = {
   es: {
     // Hero
     "greetings":    "> Saludos! Mi nombre es",
-    "intro1":       "Licenciado en Informática, doctorando en Ciencias de la Computación en la UNPSJB / CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nEste espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar. Si querés saber más, no dudes en contactarme.",
+    "intro1":       "Soy Licenciado en Informática egresado en la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), y actualmente realizo un doctorado en Ciencias de la Computación en la Universidad Nacional del Sur (UNS), Bahía Blanca. Desempeño mis actividades de investigación en CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nEste espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar. Si querés saber más, no dudes en contactarme.",
     "cv-link":      "Descargar CV →",
 
     // Tabs
-    "tab-button0":  "Proyectos",
-    "tab-button1":  "Historia académica",
-    "tab-button2":  "Publicaciones",
-    "tab-button3":  "Experiencia",
-    "tab-button4":  "Contacto",
+    "tab-button0":          "Proyectos",
+    "tab-button-research":  "Investigación",
+    "tab-button1":          "Historia académica",
+    "tab-button2":          "Publicaciones",
+    "tab-button3":          "Experiencia",
+    "tab-button4":          "Contacto",
+
 
     // Proyectos — tags
     "proj-hermes-tag":   "GraphRAG · KG · LLM",
@@ -29,11 +31,27 @@ const i18n = {
     "proj-mapyzer-desc":  "Herramienta de carga y visualización de datos espacio-temporales para ciencias del mar. Permite explorar datasets georreferenciados de forma interactiva.",
     "proj-visit":         "Ver proyecto →",
 
+    // Investigación
+    "research-title1":  "Línea doctoral",
+    "research-intro":   "Mi investigación doctoral se ubica en la intersección entre la IA neuro-simbólica y los sistemas de conocimiento marino. Estudio cómo los grafos de conocimiento marino pueden integrarse con Large Language Models mediante frameworks de recuperación y razonamiento neuro-simbólico, para sostener inferencia fundamentada (<em>grounded</em>) e interacción en lenguaje natural sobre datos heterogéneos de ciencias del mar — un enfoque conocido como <em>ontology-grounded reasoning</em>. El trabajo explora métodos de recuperación basados en grafos, incluyendo GraphRAG, junto con arquitecturas multiagente para extracción, recuperación y análisis de conocimiento en datos de biodiversidad marina y oceanografía. Como parte de la evaluación, defino métricas como <strong>solidez semántica (<em>semantic soundness</em>)</strong> y <strong>fidelidad de fundamentación (<em>grounding fidelity</em>)</strong> para medir en qué medida las respuestas generadas son trazables al grafo simbólico subyacente.",
+    "research-title2":  "Dirección",
+    "advisor1-role":    "Director — Universidad Nacional del Sur (UNS)",
+    "advisor2-role":    "Co-director — CESIMAR-CONICET / UNPSJB",
+    "research-title3":  "Afiliación institucional",
+    "research-period":  "Agosto 2024 — Presente",
+    "research-title4":  "Áreas de interés",
+    "rtag1": "IA neuro-simbólica",
+    "rtag2": "Grafos de conocimiento",
+    "rtag3": "RAG / GraphRAG",
+    "rtag4": "Web semántica",
+    "rtag5": "Evaluación de LLMs",
+    "rtag6": "Datos abiertos enlazados",
+
     // Historia académica
     "tab1-title1":  "Nivel Universitario",
     "tab1-title2":  "Cursos",
     "tab1-title3":  "Certificaciones",
-    "phd":          "<strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. UNS, Bahía Blanca / CESIMAR-CONICET, Puerto Madryn.",
+    "phd":          "<strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. Universidad Nacional del Sur (UNS), Puerto Madryn.",
     "degree":       "<strong>2018 - 2024:</strong> Licenciatura en Informática. UNPSJB, Puerto Madryn.",
     "analyst":      "<strong>2018 - 2021:</strong> Analista Programador Universitario. UNPSJB, Puerto Madryn.",
     "course7":      "Fundamentos de Inteligencia Artificial Explicable.",
@@ -53,13 +71,12 @@ const i18n = {
     // Publicaciones
     "tab2-title1":    "Artículos en Revistas",
     "tab2-title2":    "Papers",
+    "tab2-title2b":   "Papers",
     "tab2-title3":    "Conferencias",
     "pub-link-text":  "→ Ver artículo",
     "pub-iodc-meta":  "International Ocean Data Conference III (IODC-III) — Marzo 2025, Santa Marta, Colombia.",
 
     // Experiencia — Desarrollo de Software
-    "tab3-title0":    "Investigación",
-    "exp0-period":    "Agosto 2024 — Presente",
     "tab3-title1":    "Desarrollo de Software",
     "exp1-period":    "Marzo 2023 — Julio 2024",
     "exp2-period":    "Septiembre 2021 — Enero 2022",
@@ -70,6 +87,8 @@ const i18n = {
 
     // Experiencia — Instrucción Académica
     "tab3-title2":    "Instrucción Académica",
+    "aca0-company":   "Auxiliar en Elementos de Informática — UNPSJB",
+    "aca0-period":    "Febrero 2025 — Presente",
     "aca1-company":   "Auxiliar en Análisis Matemático — UNPSJB",
     "aca1-period":    "Agosto 2021 — Julio 2024",
     "aca2-company":   "Tutor Alumno — UNPSJB",
@@ -91,15 +110,17 @@ const i18n = {
   en: {
     // Hero
     "greetings":    "> Hi! My name is",
-    "intro1":       "Computer Science graduate, PhD candidate at UNPSJB / CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nThis space reflects my projects, research and publications in AI, knowledge systems and marine science. Feel free to reach out!",
+    "intro1":       "I hold a degree in Computer Science from the Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), and I am currently pursuing a PhD in Computer Science at the Universidad Nacional del Sur (UNS), Bahía Blanca. I carry out my research at CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nThis space reflects my projects, research and publications in AI, knowledge systems and marine science. Feel free to reach out!",
     "cv-link":      "Download CV →",
 
     // Tabs
-    "tab-button0":  "Projects",
-    "tab-button1":  "Academic history",
-    "tab-button2":  "Publications",
-    "tab-button3":  "Experience",
-    "tab-button4":  "Contact",
+    "tab-button0":          "Projects",
+    "tab-button-research":  "Research",
+    "tab-button1":          "Academic history",
+    "tab-button2":          "Publications",
+    "tab-button3":          "Experience",
+    "tab-button4":          "Contact",
+
 
     // Proyectos — tags
     "proj-hermes-tag":   "GraphRAG · KG · LLM",
@@ -118,11 +139,27 @@ const i18n = {
     "proj-mapyzer-desc":  "Spatio-temporal data loading and visualization tool for marine sciences. Allows interactive exploration of georeferenced datasets.",
     "proj-visit":         "View project →",
 
+    // Investigación
+    "research-title1":  "Doctoral research",
+    "research-intro":   "My doctoral research sits at the intersection of neuro-symbolic AI and marine knowledge systems. I study how marine knowledge graphs can be integrated with Large Language Models through neuro-symbolic retrieval and reasoning frameworks, to support grounded inference and natural-language interaction over heterogeneous marine science data — an approach known as <em>ontology-grounded reasoning</em>. The work explores graph-based retrieval methods, including GraphRAG, together with multi-agent architectures for knowledge extraction, retrieval and analysis across marine biodiversity and oceanographic datasets. As part of the evaluation, I define metrics such as <strong>semantic soundness</strong> and <strong>grounding fidelity</strong> to measure to what extent generated answers are traceable to the underlying symbolic graph.",
+    "research-title2":  "Supervision",
+    "advisor1-role":    "Advisor — Universidad Nacional del Sur (UNS)",
+    "advisor2-role":    "Co-advisor — CESIMAR-CONICET / UNPSJB",
+    "research-title3":  "Institutional affiliation",
+    "research-period":  "August 2024 — Present",
+    "research-title4":  "Areas of interest",
+    "rtag1": "Neuro-symbolic AI",
+    "rtag2": "Knowledge graphs",
+    "rtag3": "RAG / GraphRAG",
+    "rtag4": "Semantic Web",
+    "rtag5": "LLM evaluation",
+    "rtag6": "Linked open data",
+
     // Historia académica
     "tab1-title1":  "University Education",
     "tab1-title2":  "Courses",
     "tab1-title3":  "Certifications",
-    "phd":          "<strong>2024 - present:</strong> PhD in Computer Science. UNS, Bahía Blanca / CESIMAR-CONICET, Puerto Madryn.",
+    "phd":          "<strong>2024 - present:</strong> PhD in Computer Science. Universidad Nacional del Sur (UNS), Puerto Madryn.",
     "degree":       "<strong>2018 - 2024:</strong> Bachelor's Degree in Computer Science. UNPSJB, Puerto Madryn.",
     "analyst":      "<strong>2018 - 2021:</strong> University Programming Analyst. UNPSJB, Puerto Madryn.",
     "course7":      "Fundamentals of Explainable Artificial Intelligence.",
@@ -142,13 +179,12 @@ const i18n = {
     // Publicaciones
     "tab2-title1":    "Journal Articles",
     "tab2-title2":    "Papers",
+    "tab2-title2b":   "Papers",
     "tab2-title3":    "Conferences",
     "pub-link-text":  "→ View article",
     "pub-iodc-meta":  "International Ocean Data Conference III (IODC-III) — March 2025, Santa Marta, Colombia.",
 
     // Experiencia — Software Development
-    "tab3-title0":    "Research",
-    "exp0-period":    "August 2024 — Present",
     "tab3-title1":    "Software Development",
     "exp1-period":    "March 2023 — July 2024",
     "exp2-period":    "September 2021 — January 2022",
@@ -159,6 +195,8 @@ const i18n = {
 
     // Experiencia — Academic Instruction
     "tab3-title2":    "Academic Instruction",
+    "aca0-company":   "Teaching Assistant, Computer Science Fundamentals — UNPSJB",
+    "aca0-period":    "February 2025 — Present",
     "aca1-company":   "Teaching Assistant, Mathematical Analysis — UNPSJB",
     "aca1-period":    "August 2021 — July 2024",
     "aca2-company":   "Student Tutor — UNPSJB",

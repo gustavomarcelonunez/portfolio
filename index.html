@@ -57,32 +57,43 @@
   <main class="site-main">
 
     <section class="hero">
-      <p class="greeting" data-key="greetings"><span class="prompt-char">&gt;</span> Saludos! Mi nombre es</p>
-      <h1>Gustavo Marcelo Nuñez</h1>
-      <p class="intro" data-key="intro1">
-        Licenciado en Informática, doctorando en Ciencias de la Computación en la UNPSJB / CESIMAR-CONICET, Puerto Madryn, Argentina.
-        <br><br>
-        Este espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar.
-        Si querés saber más, no dudes en contactarme.
-        <br>
-        <a href="./public/cv/CV Nuñez.pdf" target="_blank" class="cv-link" data-key="cv-link">Descargar CV <span class="arrow">→</span></a>
-      </p>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="greeting" data-key="greetings"><span class="prompt-char">&gt;</span> Saludos! Mi nombre es</p>
+          <h1>Gustavo Marcelo Nuñez</h1>
+          <p class="intro" data-key="intro1">
+            Soy Licenciado en Informática egresado en la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), y actualmente realizo un doctorado en Ciencias de la Computación en la Universidad Nacional del Sur (UNS), Bahía Blanca. Desempeño mis actividades de investigación en CESIMAR-CONICET, Puerto Madryn, Argentina.
+            <br><br>
+            Este espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar.
+            Si querés saber más, no dudes en contactarme.
+            <br>
+            <a href="./public/cv/CV Nuñez.pdf" target="_blank" class="cv-link" data-key="cv-link">Descargar CV <span class="arrow">→</span></a>
+          </p>
+        </div>
+        <div class="hero-photo">
+          <img src="./public/images/profile.jpg" alt="Gustavo Marcelo Nuñez" id="profilePhoto">
+        </div>
+      </div>
     </section>
 
     <nav class="tabs-nav" role="tablist">
       <button class="tab" role="tab" data-content="content-tab0" data-key="tab-button0" aria-selected="true">Proyectos</button>
-      <button class="tab" role="tab" data-content="content-tab1" data-key="tab-button1" aria-selected="false">Historia académica</button>
-      <button class="tab" role="tab" data-content="content-tab2" data-key="tab-button2" aria-selected="false">Publicaciones</button>
-      <button class="tab" role="tab" data-content="content-tab3" data-key="tab-button3" aria-selected="false">Experiencia</button>
-      <button class="tab" role="tab" data-content="content-tab4" data-key="tab-button4" aria-selected="false">Contacto</button>
+      <button class="tab" role="tab" data-content="content-tab1" data-key="tab-button-research" aria-selected="false">Investigación</button>
+      <button class="tab" role="tab" data-content="content-tab2" data-key="tab-button1" aria-selected="false">Historia académica</button>
+      <button class="tab" role="tab" data-content="content-tab3" data-key="tab-button2" aria-selected="false">Publicaciones</button>
+      <button class="tab" role="tab" data-content="content-tab4" data-key="tab-button3" aria-selected="false">Experiencia</button>
+      <button class="tab" role="tab" data-content="content-tab5" data-key="tab-button4" aria-selected="false">Contacto</button>
     </nav>
 
     <div class="tabs-wrapper">
 
-      <!-- DEFAULT: GIF -->
+      <!-- DEFAULT: KG VISUAL -->
       <div class="tab-panel active" id="content-no-tab" role="tabpanel">
-        <div class="gif-container">
-          <img src="./public/images/giphy.gif" alt="Mario Bros coding" id="miGif" loading="lazy">
+        <div class="kg-container">
+          <svg id="kgSvg" viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Visualización de un grafo de conocimiento sobre mi perfil académico">
+            <g id="kgEdges" stroke-width="1"></g>
+            <g id="kgNodes"></g>
+          </svg>
         </div>
       </div>
 
@@ -99,7 +110,7 @@
             <div class="project-tech">
               <span>Python</span><span>Streamlit</span><span>NetworkX</span><span>GPT-4o</span><span>Mistral</span>
             </div>
-            <a href="https://hermes-project.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+            <a href="https://github.com/gustavomarcelonunez/hermes" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
           </article>
 
           <article class="project-card">
@@ -109,9 +120,9 @@
             </div>
             <p data-key="proj-aquamind-desc">Sistema multiagente para consulta de especies marinas que integra WoRMS y OBIS mediante lenguaje natural. Combina recuperación de información, razonamiento semántico y LLMs.</p>
             <div class="project-tech">
-              <span>Python</span><span>Streamlit</span><span>WoRMS API</span><span>OBIS API</span><span>LLM</span>
+              <span>Python</span><span>WoRMS API</span><span>OBIS API</span><span>LLM</span>
             </div>
-            <a href="https://aquamind.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+            <a href="https://github.com/gustavomarcelonunez/aquamind" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
           </article>
 
           <article class="project-card">
@@ -121,9 +132,9 @@
             </div>
             <p data-key="proj-botgbif-desc">Bot de consulta sobre biodiversidad que accede a datos de GBIF mediante lenguaje natural. Facilita el acceso a registros de ocurrencia de especies para investigadores y público general.</p>
             <div class="project-tech">
-              <span>Python</span><span>Streamlit</span><span>GBIF API</span><span>LLM</span><span>NLP</span>
+              <span>Python</span><span>GBIF API</span><span>NLP</span>
             </div>
-            <a href="https://botgbif.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+            <a href="https://github.com/gustavomarcelonunez/botgbif" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
           </article>
 
           <article class="project-card">
@@ -133,9 +144,9 @@
             </div>
             <p data-key="proj-obisbot-desc">Bot conversacional para exploración de datos del Ocean Biodiversity Information System (OBIS). Permite consultas en lenguaje natural sobre distribución y ocurrencia de especies marinas.</p>
             <div class="project-tech">
-              <span>Python</span><span>Streamlit</span><span>OBIS API</span><span>LLM</span><span>NLP</span>
+              <span>Python</span><span>OBIS API</span><span>LLM</span>
             </div>
-            <a href="https://obis-bot.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+            <a href="https://github.com/gustavomarcelonunez/obisbot" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
           </article>
 
           <article class="project-card">
@@ -165,15 +176,54 @@
         </div>
       </div>
 
-      <!-- TAB 1: HISTORIA ACADÉMICA -->
+      <!-- TAB 1: INVESTIGACIÓN -->
       <div class="tab-panel" id="content-tab1" role="tabpanel">
+        <h2 data-key="research-title1">Línea doctoral</h2>
+        <p class="research-intro" data-key="research-intro">
+          Mi investigación doctoral se ubica en la intersección entre la IA neuro-simbólica y los sistemas de conocimiento marino. Trabajo en arquitecturas que combinan modelos de lenguaje (LLMs) con grafos de conocimiento (Knowledge Graphs) para mejorar la consistencia, explicabilidad y trazabilidad de las respuestas generadas — un enfoque conocido como <em>ontology-grounded reasoning</em>. El eje central de mi tesis es el desarrollo de una métrica de <strong>Grounding Fidelity (GF)</strong>, orientada a evaluar en qué medida una respuesta generada por un sistema RAG/GraphRAG está efectivamente fundamentada en el grafo simbólico subyacente, y no solo en la capacidad generativa del LLM.
+        </p>
+
+        <h2 data-key="research-title2">Dirección</h2>
+        <ul class="advisors-list">
+          <li>
+            <div class="advisor-name">Dr. Pablo Fillottrani</div>
+            <div class="advisor-role" data-key="advisor1-role">Director — Universidad Nacional del Sur (UNS)</div>
+          </li>
+          <li>
+            <div class="advisor-name">Dr. Marcos Zárate</div>
+            <div class="advisor-role" data-key="advisor2-role">Co-director — CESIMAR-CONICET / UNPSJB</div>
+          </li>
+        </ul>
+
+        <h2 data-key="research-title3">Afiliación institucional</h2>
+        <ul class="exp-list">
+          <li>
+            <div class="exp-company">CESIMAR — CENPAT — CONICET</div>
+            <div class="exp-period" data-key="research-period">Agosto 2024 — Presente</div>
+            <div class="exp-stack">Knowledge Graphs · RAG · GraphRAG · LLM · Python</div>
+          </li>
+        </ul>
+
+        <h2 data-key="research-title4">Áreas de interés</h2>
+        <div class="research-tags">
+          <span data-key="rtag1">IA neuro-simbólica</span>
+          <span data-key="rtag2">Grafos de conocimiento</span>
+          <span data-key="rtag3">RAG / GraphRAG</span>
+          <span data-key="rtag4">Web semántica</span>
+          <span data-key="rtag5">Evaluación de LLMs</span>
+          <span data-key="rtag6">Datos abiertos enlazados</span>
+        </div>
+      </div>
+
+      <!-- TAB 2: HISTORIA ACADÉMICA -->
+      <div class="tab-panel" id="content-tab2" role="tabpanel">
         <h2 data-key="tab1-title1">Nivel Universitario</h2>
         <ul>
-          <li data-key="phd"><strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. UNS, Bahía Blanca / CESIMAR-CONICET, Puerto Madryn.</li>
+          <li data-key="phd"><strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. Universidad Nacional del Sur (UNS), Puerto Madryn.</li>
           <li data-key="degree"><strong>2018 - 2024:</strong> Licenciatura en Informática. UNPSJB, Puerto Madryn.</li>
           <li data-key="analyst"><strong>2018 - 2021:</strong> Analista Programador Universitario. UNPSJB, Puerto Madryn.</li>
         </ul>
- 
+
         <h2 data-key="tab1-title2">Cursos</h2>
         <ul>
           <li><strong data-key="course7">Fundamentos de Inteligencia Artificial Explicable.</strong> <span data-key="course7-meta">UNS, 2026, Bahía Blanca, Argentina.</span></li>
@@ -187,7 +237,7 @@
           <li><strong data-key="course2">Clasificadores probabilísticos en aprendizaje automático.</strong> ECI 2019, UBA, Buenos Aires.</li>
           <li><strong data-key="course1">Webapps de atrás hacia adelante.</strong> 2018, UNPSJB, Puerto Madryn.</li>
         </ul>
- 
+
         <h2 data-key="tab1-title3">Certificaciones</h2>
         <ul>
           <li><strong>Generative AI Fundamentals:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6574827" target="_blank">Google Cloud Skills Boost</a></li>
@@ -205,84 +255,76 @@
         </ul>
       </div>
 
-      <!-- TAB 2: PUBLICACIONES -->
-	<div class="tab-panel" id="content-tab2" role="tabpanel">
-	  <h2 data-key="tab2-title1">Artículos en Revistas</h2>
-	  <ul class="pub-list">
-	    <li>
-	      <span class="pub-title">ODP-DASHBOARD: Enhancing Marine Species Conservation in the South Atlantic through Linked Open Data Integration.</span>
-	      <a href="https://journal.info.unlp.edu.ar/JCST/article/view/3475" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	  </ul>
-
-	  <h2 data-key="tab2-title2">Papers</h2>
-	  <ul class="pub-list">
-	    <li>
-	      <span class="pub-title">Integración de Grafos de Conocimiento y Modelos RAG para la Gestión Inteligente de Datos Oceanográficos.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/183852" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Digitizing and Structuring Early Marine Biodiversity Records: A GraphRAG-Based Methodology.</span>
-	      <a href="https://zenodo.org/records/16912811" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Modelo de Redes Neuronales Convolucionales para la Detección, Clasificación y Conteo De Elefantes Marinos a Partir de Imágenes Digitales.</span>
-	      <a href="https://wicc2024.unp.edu.ar/images/libros/LibroDeActasWICC2024.pdf#page=285" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	  </ul>
-	
-	  <h2>Short Papers</h2>
-	  <ul class="pub-list">
-	    <li>
-	      <span class="pub-title">Integrating Oceanographic Sensor Data Using SSN/SOSA Ontology.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/155442" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Knowledge Graphs para accesibilidad y reutilización de activos digitales del Mar Argentino.</span>
-	      <a href="http://sedici.unlp.edu.ar/handle/10915/162004" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Análisis Visual para Datos Abiertos Enlazados vinculados a las Ciencias de Mar.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/149447" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Democratizing Argentine Marine Science Data Through Linked Open Data.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/149638" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Visual Analytics for Linked Open Data in Marine Sciences.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/140643" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Extracción y Explotación de Conocimiento para la Gestión en Línea de Datos en Ciencias del Mar.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/143371" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	    <li>
-	      <span class="pub-title">Mapyzer: una herramienta de carga y visualización de datos espacio-temporales.</span>
-	      <a href="https://sedici.unlp.edu.ar/handle/10915/130456" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	  </ul>
-	
-	  <h2 data-key="tab2-title3">Conferencias</h2>
-	  <ul class="pub-list">
-	    <li>
-	      <span class="pub-title">OBISBot: Enhancing Access to Marine Biodiversity Data through AI.</span>
-	      <span class="pub-meta" data-key="pub-iodc-meta">International Ocean Data Conference III (IODC-III) — Marzo 2025, Santa Marta, Colombia.</span>
-	      <a href="https://oceandataconference.org/iodc-iii-programme" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
-	    </li>
-	  </ul>
-	</div>
-
-      <!-- TAB 3: EXPERIENCIA -->
+      <!-- TAB 3: PUBLICACIONES -->
       <div class="tab-panel" id="content-tab3" role="tabpanel">
-        <h2 data-key="tab3-title0">Investigación</h2>
-        <ul class="exp-list">
-	  <li>
-            <div class="exp-company">CESIMAR - CENPAT - CONICET</div>
-            <div class="exp-period" data-key="exp0-period">Agosto 2024 — Presente</div>
-            <div class="exp-stack">Knowledge Graphs · RAG · GraphRAG · LLM · Python</div>
+        <h2 data-key="tab2-title1">Artículos en Revistas</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-title">ODP-DASHBOARD: Enhancing Marine Species Conservation in the South Atlantic through Linked Open Data Integration.</span>
+            <a href="https://journal.info.unlp.edu.ar/JCST/article/view/3475" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
           </li>
         </ul>
+
+        <h2 data-key="tab2-title2b">Papers</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-title">Integración de Grafos de Conocimiento y Modelos RAG para la Gestión Inteligente de Datos Oceanográficos.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/183852" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Digitizing and Structuring Early Marine Biodiversity Records: A GraphRAG-Based Methodology.</span>
+            <a href="https://zenodo.org/records/16912811" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Modelo de Redes Neuronales Convolucionales para la Detección, Clasificación y Conteo De Elefantes Marinos a Partir de Imágenes Digitales.</span>
+            <a href="https://wicc2024.unp.edu.ar/images/libros/LibroDeActasWICC2024.pdf#page=285" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+        </ul>
+
+        <h2>Short Papers</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-title">Integrating Oceanographic Sensor Data Using SSN/SOSA Ontology.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/155442" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Knowledge Graphs para accesibilidad y reutilización de activos digitales del Mar Argentino.</span>
+            <a href="http://sedici.unlp.edu.ar/handle/10915/162004" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Análisis Visual para Datos Abiertos Enlazados vinculados a las Ciencias de Mar.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/149447" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Democratizing Argentine Marine Science Data Through Linked Open Data.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/149638" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Visual Analytics for Linked Open Data in Marine Sciences.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/140643" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Extracción y Explotación de Conocimiento para la Gestión en Línea de Datos en Ciencias del Mar.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/143371" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+          <li>
+            <span class="pub-title">Mapyzer: una herramienta de carga y visualización de datos espacio-temporales.</span>
+            <a href="https://sedici.unlp.edu.ar/handle/10915/130456" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+        </ul>
+
+        <h2 data-key="tab2-title3">Conferencias</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-title">OBISBot: Enhancing Access to Marine Biodiversity Data through AI.</span>
+            <span class="pub-meta" data-key="pub-iodc-meta">International Ocean Data Conference III (IODC-III) — Marzo 2025, Santa Marta, Colombia.</span>
+            <a href="https://oceandataconference.org/iodc-iii-programme" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- TAB 4: EXPERIENCIA -->
+      <div class="tab-panel" id="content-tab4" role="tabpanel">
         <h2 data-key="tab3-title1">Desarrollo de Software</h2>
         <ul class="exp-list">
           <li>
@@ -310,6 +352,10 @@
         <h2 data-key="tab3-title2">Instrucción Académica</h2>
         <ul class="exp-list">
           <li>
+            <div class="exp-company" data-key="aca0-company">Auxiliar en Elementos de Informática — UNPSJB</div>
+            <div class="exp-period" data-key="aca0-period">Febrero 2025 — Presente</div>
+          </li>
+          <li>
             <div class="exp-company" data-key="aca1-company">Auxiliar en Análisis Matemático — UNPSJB</div>
             <div class="exp-period" data-key="aca1-period">Agosto 2021 — Julio 2024</div>
           </li>
@@ -332,8 +378,8 @@
         </ul>
       </div>
 
-      <!-- TAB 4: CONTACTO -->
-      <div class="tab-panel" id="content-tab4" role="tabpanel">
+      <!-- TAB 5: CONTACTO -->
+      <div class="tab-panel" id="content-tab5" role="tabpanel">
         <h2 data-key="tab4-title1">Contacto</h2>
         <form id="contact-form" novalidate>
           <input type="hidden" name="contact_number" value="697483">
