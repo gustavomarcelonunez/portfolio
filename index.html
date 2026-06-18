@@ -1,218 +1,434 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="public/images/icons8-developer-16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/styles.css">
+  <script defer src="public/js/script.js"></script>
+  <script defer src="public/js/change-language.js"></script>
+  <title>Gustavo Marcelo Nuñez</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="public/images/icons8-developer-16.png">
-        <link rel="stylesheet" href="public/css/styles.css">
-        <script defer src="public/js/script.js"></script>
-        <script src="public/js/change-language.js"></script>
-        
-        <title>Gustavo Marcelo Nuñez</title>
+  <header>
+    <div class="header-inner">
+      <div class="language-buttons">
+        <img src="public/images/spain-country-flag-round-icon.png" alt="Español" onclick="changeLanguage('es')" title="Español">
+        <img src="public/images/uk-flag-round-circle-icon.png" alt="English" onclick="changeLanguage('en')" title="English">
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/gustavomarcelonunez" target="_blank" title="GitHub" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
+            <linearGradient id="gh_gr1" x1="30.999" x2="30.999" y1="16" y2="55.342" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient>
+            <path fill="url(#gh_gr1)" d="M25.008,56.007c-0.003-0.368-0.006-1.962-0.009-3.454l-0.003-1.55c-6.729,0.915-8.358-3.78-8.376-3.83c-0.934-2.368-2.211-3.045-2.266-3.073l-0.124-0.072c-0.463-0.316-1.691-1.157-1.342-2.263c0.315-0.997,1.536-1.1,2.091-1.082c3.074,0.215,4.63,2.978,4.694,3.095c1.569,2.689,3.964,2.411,5.509,1.844c0.144-0.688,0.367-1.32,0.659-1.878C20.885,42.865,15.27,40.229,15.27,30.64c0-2.633,0.82-4.96,2.441-6.929c-0.362-1.206-0.774-3.666,0.446-6.765l0.174-0.442l0.452-0.144c0.416-0.137,2.688-0.624,7.359,2.433c1.928-0.494,3.969-0.749,6.074-0.759c2.115,0.01,4.158,0.265,6.09,0.759c4.667-3.058,6.934-2.565,7.351-2.433l0.451,0.145l0.174,0.44c1.225,3.098,0.813,5.559,0.451,6.766c1.618,1.963,2.438,4.291,2.438,6.929c0,9.591-5.621,12.219-10.588,13.087c0.563,1.065,0.868,2.402,0.868,3.878c0,1.683-0.007,7.204-0.015,8.402l-2-0.014c0.008-1.196,0.015-6.708,0.015-8.389c0-2.442-0.943-3.522-1.35-3.874l-1.73-1.497l2.274-0.253c5.205-0.578,10.525-2.379,10.525-11.341c0-2.33-0.777-4.361-2.31-6.036l-0.43-0.469l0.242-0.587c0.166-0.401,0.894-2.442-0.043-5.291c-0.758,0.045-2.568,0.402-5.584,2.447l-0.384,0.259l-0.445-0.123c-1.863-0.518-3.938-0.796-6.001-0.806c-2.052,0.01-4.124,0.288-5.984,0.806l-0.445,0.123l-0.383-0.259c-3.019-2.044-4.833-2.404-5.594-2.449c-0.935,2.851-0.206,4.892-0.04,5.293l0.242,0.587l-0.429,0.469c-1.536,1.681-2.314,3.712-2.314,6.036c0,8.958,5.31,10.77,10.504,11.361l2.252,0.256l-1.708,1.49c-0.372,0.325-1.03,1.112-1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592-5.839,2.162-8.548-2.485c-0.015-0.025-0.544-0.945-1.502-1.557c0.646,0.639,1.433,1.673,2.068,3.287c0.066,0.19,1.357,3.622,7.28,2.339l1.206-0.262l0.012,3.978c0.003,1.487,0.006,3.076,0.009,3.444L25.008,56.007z"/>
+            <linearGradient id="gh_gr2" x1="32" x2="32" y1="5" y2="59.167" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient>
+            <path fill="url(#gh_gr2)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/>
+          </svg>
+        </a>
+        <a href="mailto:gnunez@ing.unp.edu.ar" target="_blank" title="Email" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+            <path d="M71.5,87c-3.584,0-6.5-2.916-6.5-6.5V64.571l-9.1,6.825c-1.119,0.839-2.504,1.3-3.9,1.3s-2.781-0.461-3.898-1.298L39,64.571V80.5c0,3.584-2.916,6.5-6.5,6.5H19.857C13.319,87,8,81.681,8,75.143v-44.09c0-7.85,6.387-14.236,14.236-14.236c3.059,0,6.092,1.011,8.539,2.846L52,35.723L73.2,19.68c2.471-1.852,5.505-2.863,8.563-2.863c7.85,0,14.236,6.386,14.236,14.236v44.09C96,81.681,90.681,87,84.143,87H71.5z" opacity=".35"/>
+            <path fill="#f2f2f2" d="M69.5,85c-3.584,0-6.5-2.916-6.5-6.5V62.571l-9.1,6.825c-1.119,0.839-2.504,1.3-3.9,1.3s-2.781-0.461-3.898-1.298L37,62.571V78.5c0,3.584-2.916,6.5-6.5,6.5H17.857C11.319,85,6,79.681,6,73.143v-44.09c0-7.85,6.387-14.236,14.236-14.236c3.059,0,6.092,1.011,8.539,2.846L50,33.723L71.2,17.68c2.471-1.852,5.505-2.863,8.563-2.863c7.85,0,14.236,6.386,14.236,14.236v44.09C94,79.681,88.681,85,82.143,85H69.5z"/>
+            <path fill="#96c362" d="M87.5,36l-9,4.911l-9,8.482V78.5h12.643c2.959,0,5.357-2.398,5.357-5.357V36z"/>
+            <path fill="#70bfff" d="M12.5,36l6.505,3.054L30.5,49.393V78.5H17.857c-2.959,0-5.357-2.398-5.357-5.357V36z"/>
+            <polygon fill="#ff7575" points="69.643,27.143 50,41.875 30.357,27.143 28.571,37.5 30.357,49.464 50,64.196 69.643,49.464 71.429,37.5"/>
+            <path fill="#f4665c" d="M12.5,29.053v7.024l18,13.5v-22.5l-5.623-4.214c-1.339-1.004-2.966-1.546-4.64-1.546C15.963,21.316,12.5,24.78,12.5,29.053z"/>
+            <path fill="#ffc571" d="M87.5,29.053v7.024l-18,13.5v-22.5l5.623-4.214c1.339-1.004,2.966-1.546,4.64-1.546C84.037,21.316,87.5,24.78,87.5,29.053z"/>
+            <path fill="#40396e" d="M82.143,80H69.5c-0.828,0-1.5-0.671-1.5-1.5V52.571L50.9,65.396c-0.533,0.399-1.268,0.399-1.801,0L32,52.571V78.5c0,0.829-0.672,1.5-1.5,1.5H17.857C14.076,80,11,76.924,11,73.143v-44.09c0-5.093,4.144-9.236,9.236-9.236c1.984,0,3.952,0.656,5.54,1.846L50,39.994l24.218-18.327c1.594-1.194,3.562-1.85,5.546-1.85c5.093,0,9.236,4.144,9.236,9.236v44.09C89,76.924,85.924,80,82.143,80z M71,77h11.143C84.27,77,86,75.27,86,73.143v-44.09c0-3.438-2.798-6.236-6.236-6.236c-1.34,0-2.669,0.443-3.741,1.247L50.905,43.071c-0.535,0.405-1.275,0.405-1.811,0L23.972,24.059c-1.066-0.8-2.396-1.243-3.735-1.243c-3.438,0-6.236,2.798-6.236,6.236v44.09C14,75.27,15.73,77,17.857,77H29V49.571c0-0.568,0.321-1.087,0.829-1.342c0.508-0.253,1.117-0.199,1.571,0.142L50,62.321l18.6-13.95c0.454-0.341,1.063-0.396,1.571-0.142C70.679,48.484,71,49.003,71,49.571V77z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gustavomarcelonunez/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
+            <path fill="#0078d4" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"/>
+            <path d="M30,35v-9c0-1.103-0.897-2-2-2s-2,0.897-2,2v9h-6V18h6v1.027C27.04,18.359,28.252,18,29.5,18c3.584,0,6.5,2.916,6.5,6.5V35H30z M13,35V18h2.966C14.247,18,13,16.738,13,14.999C13,13.261,14.267,12,16.011,12c1.696,0,2.953,1.252,2.989,2.979C19,16.733,17.733,18,15.988,18H19v17H13z" opacity=".05"/>
+            <path d="M30.5,34.5V26c0-1.378-1.121-2.5-2.5-2.5s-2.5,1.122-2.5,2.5v8.5h-5v-16h5v1.534c1.09-0.977,2.512-1.534,4-1.534c3.309,0,6,2.691,6,6v10H30.5z M13.5,34.5v-16h5v16H13.5z M15.966,17.5c-1.429,0-2.466-1.052-2.466-2.501c0-1.448,1.056-2.499,2.511-2.499c1.436,0,2.459,1.023,2.489,2.489c0,1.459-1.057,2.511-2.512,2.511H15.966z" opacity=".07"/>
+            <path fill="#fff" d="M14,19h4v15h-4V19z M15.988,17h-0.022C14.772,17,14,16.11,14,14.999C14,13.864,14.796,13,16.011,13c1.217,0,1.966,0.864,1.989,1.999C18,16.11,17.228,17,15.988,17z M35,24.5c0-3.038-2.462-5.5-5.5-5.5c-1.862,0-3.505,0.928-4.5,2.344V19h-4v15h4v-8c0-1.657,1.343-3,3-3s3,1.343,3,3v8h4C35,34,35,24.921,35,24.5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        
+  <main class="site-main">
 
-    </head>
-    <body> 
-        <header>
-            <div class="language-buttons">
-                <img src="public/images/spain-country-flag-round-icon.png" alt="Español" onclick="changeLanguage('es')" style="cursor: pointer;">
-                <img src="public/images/uk-flag-round-circle-icon.png" alt="English" onclick="changeLanguage('en')" style="cursor: pointer;">
-            </div>
-        
-            <div class="social-links">
-                <a href="https://github.com/gustavomarcelonunez" target="_blank" title="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
-                        <linearGradient id="KpzH_ttTMIjq8dhx1zD2pa_52539_gr1" x1="30.999" x2="30.999" y1="16" y2="55.342" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><path fill="url(#KpzH_ttTMIjq8dhx1zD2pa_52539_gr1)" d="M25.008,56.007c-0.003-0.368-0.006-1.962-0.009-3.454l-0.003-1.55 c-6.729,0.915-8.358-3.78-8.376-3.83c-0.934-2.368-2.211-3.045-2.266-3.073l-0.124-0.072c-0.463-0.316-1.691-1.157-1.342-2.263 c0.315-0.997,1.536-1.1,2.091-1.082c3.074,0.215,4.63,2.978,4.694,3.095c1.569,2.689,3.964,2.411,5.509,1.844 c0.144-0.688,0.367-1.32,0.659-1.878C20.885,42.865,15.27,40.229,15.27,30.64c0-2.633,0.82-4.96,2.441-6.929 c-0.362-1.206-0.774-3.666,0.446-6.765l0.174-0.442l0.452-0.144c0.416-0.137,2.688-0.624,7.359,2.433 c1.928-0.494,3.969-0.749,6.074-0.759c2.115,0.01,4.158,0.265,6.09,0.759c4.667-3.058,6.934-2.565,7.351-2.433l0.451,0.145 l0.174,0.44c1.225,3.098,0.813,5.559,0.451,6.766c1.618,1.963,2.438,4.291,2.438,6.929c0,9.591-5.621,12.219-10.588,13.087 c0.563,1.065,0.868,2.402,0.868,3.878c0,1.683-0.007,7.204-0.015,8.402l-2-0.014c0.008-1.196,0.015-6.708,0.015-8.389 c0-2.442-0.943-3.522-1.35-3.874l-1.73-1.497l2.274-0.253c5.205-0.578,10.525-2.379,10.525-11.341c0-2.33-0.777-4.361-2.31-6.036 l-0.43-0.469l0.242-0.587c0.166-0.401,0.894-2.442-0.043-5.291c-0.758,0.045-2.568,0.402-5.584,2.447l-0.384,0.259l-0.445-0.123 c-1.863-0.518-3.938-0.796-6.001-0.806c-2.052,0.01-4.124,0.288-5.984,0.806l-0.445,0.123l-0.383-0.259 c-3.019-2.044-4.833-2.404-5.594-2.449c-0.935,2.851-0.206,4.892-0.04,5.293l0.242,0.587l-0.429,0.469 c-1.536,1.681-2.314,3.712-2.314,6.036c0,8.958,5.31,10.77,10.504,11.361l2.252,0.256l-1.708,1.49 c-0.372,0.325-1.03,1.112-1.254,2.727l-0.075,0.549l-0.506,0.227c-1.321,0.592-5.839,2.162-8.548-2.485 c-0.015-0.025-0.544-0.945-1.502-1.557c0.646,0.639,1.433,1.673,2.068,3.287c0.066,0.19,1.357,3.622,7.28,2.339l1.206-0.262 l0.012,3.978c0.003,1.487,0.006,3.076,0.009,3.444L25.008,56.007z"></path><linearGradient id="KpzH_ttTMIjq8dhx1zD2pb_52539_gr2" x1="32" x2="32" y1="5" y2="59.167" gradientUnits="userSpaceOnUse" spreadMethod="reflect"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#KpzH_ttTMIjq8dhx1zD2pb_52539_gr2)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8 C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"></path>
-                    </svg>
-                </a>
-                <a href="mailto:gnunez@ing.unp.edu.ar" target="_blank" title="Gmail">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 100 100">
-                        <path d="M71.5,87c-3.584,0-6.5-2.916-6.5-6.5V64.571l-9.1,6.825c-1.119,0.839-2.504,1.3-3.9,1.3s-2.781-0.461-3.898-1.298 L39,64.571V80.5c0,3.584-2.916,6.5-6.5,6.5H19.857C13.319,87,8,81.681,8,75.143v-44.09c0-7.85,6.387-14.236,14.236-14.236 c3.059,0,6.092,1.011,8.539,2.846L52,35.723L73.2,19.68c2.471-1.852,5.505-2.863,8.563-2.863c7.85,0,14.236,6.386,14.236,14.236 v44.09C96,81.681,90.681,87,84.143,87H71.5z" opacity=".35"></path><path fill="#f2f2f2" d="M69.5,85c-3.584,0-6.5-2.916-6.5-6.5V62.571l-9.1,6.825c-1.119,0.839-2.504,1.3-3.9,1.3 s-2.781-0.461-3.898-1.298L37,62.571V78.5c0,3.584-2.916,6.5-6.5,6.5H17.857C11.319,85,6,79.681,6,73.143v-44.09 c0-7.85,6.387-14.236,14.236-14.236c3.059,0,6.092,1.011,8.539,2.846L50,33.723L71.2,17.68c2.471-1.852,5.505-2.863,8.563-2.863 c7.85,0,14.236,6.386,14.236,14.236v44.09C94,79.681,88.681,85,82.143,85H69.5z"></path><path fill="#96c362" d="M87.5,36l-9,4.911l-9,8.482V78.5h12.643c2.959,0,5.357-2.398,5.357-5.357V36z"></path><path fill="#70bfff" d="M12.5,36l6.505,3.054L30.5,49.393V78.5H17.857c-2.959,0-5.357-2.398-5.357-5.357V36z"></path><polygon fill="#ff7575" points="69.643,27.143 50,41.875 30.357,27.143 28.571,37.5 30.357,49.464 50,64.196 69.643,49.464 71.429,37.5"></polygon><path fill="#f4665c" d="M12.5,29.053v7.024l18,13.5v-22.5l-5.623-4.214c-1.339-1.004-2.966-1.546-4.64-1.546l0,0 C15.963,21.316,12.5,24.78,12.5,29.053z"></path><path fill="#ffc571" d="M87.5,29.053v7.024l-18,13.5v-22.5l5.623-4.214c1.339-1.004,2.966-1.546,4.64-1.546l0,0 C84.037,21.316,87.5,24.78,87.5,29.053z"></path><path fill="#40396e" d="M82.143,80H69.5c-0.828,0-1.5-0.671-1.5-1.5V52.571L50.9,65.396c-0.533,0.399-1.268,0.399-1.801,0 L32,52.571V78.5c0,0.829-0.672,1.5-1.5,1.5H17.857C14.076,80,11,76.924,11,73.143v-44.09c0-5.093,4.144-9.236,9.236-9.236 c1.984,0,3.952,0.656,5.54,1.846L50,39.994l24.218-18.327c1.594-1.194,3.562-1.85,5.546-1.85c5.093,0,9.236,4.144,9.236,9.236 v44.09C89,76.924,85.924,80,82.143,80z M71,77h11.143C84.27,77,86,75.27,86,73.143v-44.09c0-3.438-2.798-6.236-6.236-6.236 c-1.34,0-2.669,0.443-3.741,1.247L50.905,43.071c-0.535,0.405-1.275,0.405-1.811,0L23.972,24.059 c-1.066-0.8-2.396-1.243-3.735-1.243c-3.438,0-6.236,2.798-6.236,6.236v44.09C14,75.27,15.73,77,17.857,77H29V49.571 c0-0.568,0.321-1.087,0.829-1.342c0.508-0.253,1.117-0.199,1.571,0.142L50,62.321l18.6-13.95c0.454-0.341,1.063-0.396,1.571-0.142 C70.679,48.484,71,49.003,71,49.571V77z"></path>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/gustavomarcelonunez/" target="_blank" title="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-                        <path fill="#0078d4" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path d="M30,35v-9c0-1.103-0.897-2-2-2s-2,0.897-2,2v9h-6V18h6v1.027C27.04,18.359,28.252,18,29.5,18	c3.584,0,6.5,2.916,6.5,6.5V35H30z M13,35V18h2.966C14.247,18,13,16.738,13,14.999C13,13.261,14.267,12,16.011,12	c1.696,0,2.953,1.252,2.989,2.979C19,16.733,17.733,18,15.988,18H19v17H13z" opacity=".05"></path><path d="M30.5,34.5V26c0-1.378-1.121-2.5-2.5-2.5s-2.5,1.122-2.5,2.5v8.5h-5v-16h5v1.534	c1.09-0.977,2.512-1.534,4-1.534c3.309,0,6,2.691,6,6v10H30.5z M13.5,34.5v-16h5v16H13.5z M15.966,17.5	c-1.429,0-2.466-1.052-2.466-2.501c0-1.448,1.056-2.499,2.511-2.499c1.436,0,2.459,1.023,2.489,2.489	c0,1.459-1.057,2.511-2.512,2.511H15.966z" opacity=".07"></path><path fill="#fff" d="M14,19h4v15h-4V19z M15.988,17h-0.022C14.772,17,14,16.11,14,14.999C14,13.864,14.796,13,16.011,13	c1.217,0,1.966,0.864,1.989,1.999C18,16.11,17.228,17,15.988,17z M35,24.5c0-3.038-2.462-5.5-5.5-5.5	c-1.862,0-3.505,0.928-4.5,2.344V19h-4v15h4v-8c0-1.657,1.343-3,3-3s3,1.343,3,3v8h4C35,34,35,24.921,35,24.5z"></path>
-                    </svg>
-                </a>
-            </div>
-    
-        </header>
-        <div class="body-container">
-            <div class="main-container">
-                <p class="p-title" data-key="greetings">Saludos! Mi nombre es</p>
-                <h1>Gustavo Marcelo Nuñez</h1>
-                <p data-key="intro1">
-                Soy Licenciado en Informática y vivo en la ciudad de Puerto Madryn, Chubut, Argentina.
-                <br>
-                Actualmente estoy realizando un doctorado en Ciencias de la Computación en la Universidad Nacional del Sur (UNS), Bahía Blanca.
-                <br> <br>
-                Este espacio es un reflejo de algunos de mis proyectos, experiencias y publicaciones científicas en el ámbito de la informática. Si quieres saber más al respecto, no dudes en contactarme!
-                <br>
-                También puedes ver y descargar mi curriculum <a href="./public/cv/CV Nuñez.pdf" target="_blank">aquí</a>.
-                </p>
-            </div>
+    <section class="hero">
+      <p class="greeting" data-key="greetings"><span class="prompt-char">&gt;</span> Saludos! Mi nombre es</p>
+      <h1>Gustavo Marcelo Nuñez</h1>
+      <p class="intro" data-key="intro1">
+        Licenciado en Informática, doctorando en Ciencias de la Computación en la UNPSJB / CESIMAR-CONICET, Puerto Madryn, Argentina.
+        <br><br>
+        Este espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar.
+        Si querés saber más, no dudes en contactarme.
+        <br>
+        <a href="./public/cv/CV Nuñez.pdf" target="_blank" class="cv-link" data-key="cv-link">Descargar CV <span class="arrow">→</span></a>
+      </p>
+    </section>
 
-            <div class="tabs-container">
-                <div class="tab" data-content="content-tab1" data-key="tab-button1">Historia académica</div>
-                <div class="tab" data-content="content-tab2" data-key="tab-button2">Publicaciones científicas</div>
-                <div class="tab" data-content="content-tab3" data-key="tab-button3">Experiencia laboral</div>
-                <div class="tab" data-content="content-tab4" data-key="tab-button4">Contacto</div>
-            </div>
+    <nav class="tabs-nav" role="tablist">
+      <button class="tab" role="tab" data-content="content-tab0" data-key="tab-button0" aria-selected="true">Proyectos</button>
+      <button class="tab" role="tab" data-content="content-tab1" data-key="tab-button1" aria-selected="false">Historia académica</button>
+      <button class="tab" role="tab" data-content="content-tab2" data-key="tab-button2" aria-selected="false">Publicaciones</button>
+      <button class="tab" role="tab" data-content="content-tab3" data-key="tab-button3" aria-selected="false">Experiencia</button>
+      <button class="tab" role="tab" data-content="content-tab4" data-key="tab-button4" aria-selected="false">Contacto</button>
+    </nav>
 
-            <div class="tab-content active-content" id="content-no-tab">
-                <iframe id="miGif" src="./public/images/giphy.gif" frameBorder="0"></iframe>
-            </div>
+    <div class="tabs-wrapper">
 
-            <div class="tab-content" id="content-tab1">
-                <h2 data-key="tab1-title1">Nivel Universitario</h2>
-                <ul>
-                    <li data-key="analyst">2018 - 2021: Analista Programador Universitario. UNPSJB, Puerto Madryn.</li>
-                    <li data-key="degree">2018 - 2024: Licenciatura en Informática. UNPSJB, Puerto Madryn.</li>
-                </ul>
-            
-                <h2 data-key="tab1-title2">Cursos</h2>
-                <ul>
-                    <li><strong>Deep Learning.</strong> CACIC 2024, UNLP, La Plata.</li>
-                    <li><strong data-key="course4">Introducción del Lenguaje R y Python aplicado a la Ciencia de Datos.</strong> CACIC 2022, UNLR, La Rioja.</li>
-                    <li><strong data-key="course3">Aprendizaje profundo por refuerzo.</strong> ECI 2019, UBA, Buenos Aires.</li>
-                    <li><strong data-key="course2">Clasificadores probabilísticos en aprendizaje automático.</strong> ECI 2019, UBA, Buenos Aires.</li>
-                    <li><strong data-key="course1">Webapps de atrás hacia adelante.</strong> 2018, UNPSJB, Puerto Madryn.</li>
-                </ul>
-
-                <h2 data-key="tab1-title3">Certificaciones</h2>
-                <ul>
-                    <li><strong>Generative AI Fundamentals:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6574827" target="_blank">Link</a></li>
-                    <li><strong>Introduction to Generative AI:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6572789" target="_blank">Link</a></li>
-                    <li><strong>Introduction to Large Language Models:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6573125" target="_blank">Link</a></li>
-                    <li><strong>Introduction to Responsible AI:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6574456" target="_blank">Link</a></li>
-                </ul>
-            </div>
-
-            <div class="tab-content" id="content-tab2">
-                <h2 data-key="tab2-title1">Artículos en Revistas</h2>
-                    <ul>
-                        <li>ODP-DASHBOARD: Enhancing Marine Species Conservation in the South Atlantic through Linked Open Data Integration. <a href="https://journal.info.unlp.edu.ar/JCST/article/view/3475" target="_blank">Link</a></li>
-                    </ul>
-                <h2>Short papers</h2>
-                <ul>
-                    <li>Integrating Oceanographic Sensor Data Using SSN/SOSA Ontology. <a href="https://sedici.unlp.edu.ar/handle/10915/155442" target="_blank">Link</a></li>
-                    <li>Knowledge Graphs para accesibilidad y reutilización de activos digitales del Mar Argentino. <a href="http://sedici.unlp.edu.ar/handle/10915/162004" target="_blank">Link</a></li>
-                    <li>Análisis Visual para Datos Abiertos Enlazados vinculados a las Ciencias de Mar. <a href="https://sedici.unlp.edu.ar/handle/10915/149447" target="_blank"">Link</a></li>
-                    <li>Democratizing Argentine Marine Science Data Through Linked Open Data. <a href="https://sedici.unlp.edu.ar/handle/10915/149638" target="_blank">Link</a></li>
-                    <li>Visual Analytics for Linked Open Data in Marine Sciences. <a href="https://sedici.unlp.edu.ar/handle/10915/140643" target="_blank">Link</a></li>
-                    <li>Extracción y Explotación de Conocimiento para la Gestión en Línea de Datos en Ciencias del Mar. <a href="https://sedici.unlp.edu.ar/handle/10915/143371" target="_blank">Link</a></li>
-                    <li>Mapyzer: una herramienta de carga y visualización de datos espacio-temporales. <a href="https://sedici.unlp.edu.ar/handle/10915/130456" target="_blank">Link</a></li>
-                </ul>
-            </div>
-
-            <div class="tab-content" id="content-tab3">
-                <h2 data-key="tab3-title1">Desarrollo de Software</h2>
-                <ul>
-                    <li data-key="exp1"><strong>CyberArg Sistemas</strong> (Marzo 2023 - Julio 2024). <strong>PHP - Laravel - Vue - Node - SQL</strong></li>
-                    <li data-key="exp2"><strong>Chesca S.A.</strong> (Septiembre 2021 - Enero 2022). <strong>WordPress - Joomla - PHP - SQL</strong></li>
-                    <li data-key="exp3"><strong>Laboratorio de Informática - UNPSJB</strong>. (Abril 2021 - Marzo 2023). <strong>Angular - Bootstrap - Java - Node - C - SQL</strong></li>
-                    <li data-key="exp4"><strong>Pasantía no rentada - UNPSJB</strong>. (Septiembre 2020 - Octubre 2021). <strong>Angular - Bootstrap - JavaScript - Node - PostgreSQL</strong></li>
-                </ul>
-
-                <h2 data-key="tab3-title2">Instrucción Académica</h2>
-                <ul>
-                    <li data-key="aca1"><strong>Auxiliar en Análisis Matemático - UNPSJB</strong> (Agosto 2021 - Julio 2024).</li>
-                    <li data-key="aca2"><strong>Tutor Alumno - UNPSJB</strong> (Abril 2019 - Marzo 2024).</li>
-                    <li data-key="aca3"><strong>Profesor de Informática - Fundacion de Altos Estudios en Ciencias Comerciales</strong> (Mayo 2022 - Agosto 2022).</li>
-                    <li data-key="aca4"><strong>Profesor de Tecnologías Móviles - UNPSJB</strong> (Septiembre 2019 - Diciembre 2019).</li>
-                    <li data-key="aca5"><strong>Profesor de Computación - UNPSJB</strong> (Septiembre 2019 - Diciembre 2019).</li>
-                </ul>
-            </div>
-
-            <div class="tab-content" id="content-tab4">
-                <h2 data-key="tab4-title1">Contacto</h2>
-                
-                <form id="contact-form">
-                    <input type="hidden" name="contact_number" value="697483">
-                    <label>
-                        <ul>Email:
-                            <input type="email" name="user_email" required>
-                        </ul>
-                    </label>
-                    <label>
-                        <ul data-key="message-title">Mensaje:
-                            <textarea name="message" required></textarea>
-                        </ul>
-                    </label>
-                    <button data-key="send-button" id="send-button" type="submit">Enviar</button>
-                </form>
-            </div>
-
-        </div> 
-
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-              <p id="modal-message" data-key="modal-message"></p>
-              <button id="modal-button">OK!</button>
-            </div>
+      <!-- DEFAULT: GIF -->
+      <div class="tab-panel active" id="content-no-tab" role="tabpanel">
+        <div class="gif-container">
+          <img src="./public/images/giphy.gif" alt="Mario Bros coding" id="miGif" loading="lazy">
         </div>
-          
+      </div>
 
-        <script src="public/js/modal.js"></script>
-        <script type="text/javascript">
-            (function() {
-                emailjs.init({
-                publicKey: "xCyMBkIbTByRqBg54",
-                });
-            })();
-        </script>
+      <!-- TAB 0: PROYECTOS -->
+      <div class="tab-panel" id="content-tab0" role="tabpanel">
+        <div class="projects-grid">
 
-        <script type="text/javascript">
-            document.getElementById('send-button').addEventListener('click', function(event) {
-                event.preventDefault();
-                sendEmail();
-            });
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag" data-key="proj-hermes-tag">GraphRAG · KG · LLM</span>
+              <h3>HERMES</h3>
+            </div>
+            <p data-key="proj-hermes-desc">Plataforma web de GraphRAG que genera y compara Knowledge Graphs a partir de un corpus histórico de biología marina argentina (Carrara, 1952). Soporta 6 KGs y 4 LLMs para Q&A en español con verificación simbólica post-hoc.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Streamlit</span><span>NetworkX</span><span>GPT-4o</span><span>Mistral</span>
+            </div>
+            <a href="https://hermes-project.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+          </article>
 
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag" data-key="proj-aquamind-tag">Multiagente · Web Semántica</span>
+              <h3>AquaMind</h3>
+            </div>
+            <p data-key="proj-aquamind-desc">Sistema multiagente para consulta de especies marinas que integra WoRMS y OBIS mediante lenguaje natural. Combina recuperación de información, razonamiento semántico y LLMs.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Streamlit</span><span>WoRMS API</span><span>OBIS API</span><span>LLM</span>
+            </div>
+            <a href="https://aquamind.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+          </article>
 
-            function sendEmail() {
-                event.preventDefault();
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag" data-key="proj-botgbif-tag">Bot · Linked Open Data</span>
+              <h3>BotGBIF</h3>
+            </div>
+            <p data-key="proj-botgbif-desc">Bot de consulta sobre biodiversidad que accede a datos de GBIF mediante lenguaje natural. Facilita el acceso a registros de ocurrencia de especies para investigadores y público general.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Streamlit</span><span>GBIF API</span><span>LLM</span><span>NLP</span>
+            </div>
+            <a href="https://botgbif.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+          </article>
 
-                var email = document.getElementsByName("user_email")[0].value;
-                var message = document.getElementsByName("message")[0].value;
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag" data-key="proj-obisbot-tag">Bot · Oceanografía</span>
+              <h3>OBIS Bot</h3>
+            </div>
+            <p data-key="proj-obisbot-desc">Bot conversacional para exploración de datos del Ocean Biodiversity Information System (OBIS). Permite consultas en lenguaje natural sobre distribución y ocurrencia de especies marinas.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Streamlit</span><span>OBIS API</span><span>LLM</span><span>NLP</span>
+            </div>
+            <a href="https://obis-bot.streamlit.app/" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+          </article>
 
-                if (!validateEmail(email)) {
-                    showModal("modal-message-invalid-email");
-                    return;
-                }
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag" data-key="proj-odp-tag">Dashboard · LOD</span>
+              <h3>ODP-Dashboard</h3>
+            </div>
+            <p data-key="proj-odp-desc">Dashboard de visualización para datos abiertos enlazados sobre conservación de especies marinas en el Atlántico Sur. Integra fuentes heterogéneas mediante Linked Open Data.</p>
+            <div class="project-tech">
+              <span>Angular</span><span>SPARQL</span><span>LOD</span>
+            </div>
+            <a href="https://github.com/gustavomarcelonunez/odp-dashboard" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+          </article>
 
-                if (message.trim() === "") {
-                    showModal("modal-message-empty-message");
-                    return;
-                }
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag" data-key="proj-mapyzer-tag">Visualización · GIS</span>
+              <h3>Mapyzer</h3>
+            </div>
+            <p data-key="proj-mapyzer-desc">Herramienta de carga y visualización de datos espacio-temporales para ciencias del mar. Permite explorar datasets georreferenciados de forma interactiva.</p>
+            <div class="project-tech">
+              <span>Angular</span><span>Leaflet</span><span>GeoJSON</span>
+            </div>
+            <a href="https://github.com/gustavomarcelonunez/mapyzer" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+          </article>
 
-                var form = document.getElementById('contact-form');
+        </div>
+      </div>
 
-                emailjs.sendForm('contact_service', 'contact_form', form)
-                .then(
-                    function(response) {
-                        showModal("modal-message-success");
-                        document.getElementById('modal-button').addEventListener('click', function() {
-                            window.location.reload();
-                        });
-                    }, function(error) {
-                        showModal('Error...' + error.toString());
-                    }
-                );
-            }
+      <!-- TAB 1: HISTORIA ACADÉMICA -->
+      <div class="tab-panel" id="content-tab1" role="tabpanel">
+        <h2 data-key="tab1-title1">Nivel Universitario</h2>
+        <ul>
+          <li data-key="phd"><strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. UNS, Bahía Blanca / CESIMAR-CONICET, Puerto Madryn.</li>
+          <li data-key="degree"><strong>2018 - 2024:</strong> Licenciatura en Informática. UNPSJB, Puerto Madryn.</li>
+          <li data-key="analyst"><strong>2018 - 2021:</strong> Analista Programador Universitario. UNPSJB, Puerto Madryn.</li>
+        </ul>
+ 
+        <h2 data-key="tab1-title2">Cursos</h2>
+        <ul>
+          <li><strong data-key="course7">Fundamentos de Inteligencia Artificial Explicable.</strong> <span data-key="course7-meta">UNS, 2026, Bahía Blanca, Argentina.</span></li>
+          <li><strong data-key="course6">Reconocimiento de Patrones y Aprendizaje de Máquina.</strong> <span data-key="course6-meta">UNS, 2025, Bahía Blanca, Argentina.</span></li>
+          <li><strong data-key="course5">Procesamiento de Imágenes y Visión Computacional I.</strong> <span data-key="course5-meta">UNS, 2025, Bahía Blanca, Argentina.</span></li>
+          <li><strong>ADAPT — <span data-key="course-adapt">Curso de formación sobre mejores prácticas oceánicas.</span></strong> <span>Invemar, 2025, Santa Marta, Colombia.</span></li>
+          <li><strong data-key="course-gov">Gobernanza y Ética en la Gestión de la Información.</strong> <span data-key="course-gov-meta">UNS, 2024, Bahía Blanca.</span></li>
+          <li><strong>Deep Learning.</strong> CACIC 2024, UNLP, La Plata.</li>
+          <li><strong data-key="course4">Introducción del Lenguaje R y Python aplicado a la Ciencia de Datos.</strong> CACIC 2022, UNLR, La Rioja.</li>
+          <li><strong data-key="course3">Aprendizaje profundo por refuerzo.</strong> ECI 2019, UBA, Buenos Aires.</li>
+          <li><strong data-key="course2">Clasificadores probabilísticos en aprendizaje automático.</strong> ECI 2019, UBA, Buenos Aires.</li>
+          <li><strong data-key="course1">Webapps de atrás hacia adelante.</strong> 2018, UNPSJB, Puerto Madryn.</li>
+        </ul>
+ 
+        <h2 data-key="tab1-title3">Certificaciones</h2>
+        <ul>
+          <li><strong>Generative AI Fundamentals:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6574827" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Introduction to Generative AI:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6572789" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Introduction to Large Language Models:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6573125" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Introduction to Responsible AI:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/6574456" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Prompt Design in Vertex AI:</strong> <a href="https://www.skills.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/13516594" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Responsible AI: Applying AI Principles with Google Cloud:</strong> <a href="https://www.skills.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/13523006" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Introduction to Image Generation:</strong> <a href="https://www.skills.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/13533007" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>Attention Mechanism:</strong> <a href="https://www.cloudskillsboost.google/public_profiles/181d1489-e489-49e9-8d11-f1031924bad9/badges/13533142" target="_blank">Google Cloud Skills Boost</a></li>
+          <li><strong>ChatGPT Prompt Engineering for Developers:</strong> <a href="https://learn.deeplearning.ai/accomplishments/b7f6176a-c945-4e7b-955c-309c3493386a" target="_blank">DeepLearning.AI</a></li>
+          <li><strong>Build Long-Context AI Apps with Jamba:</strong> <a href="https://learn.deeplearning.ai/accomplishments/5a0553da-3baa-4902-a531-f06b9e9465a3" target="_blank">DeepLearning.AI</a></li>
+          <li><strong>LangChain for LLM Application Development:</strong> <a href="https://learn.deeplearning.ai/accomplishments/3390e717-324e-4d9b-8a01-d14415ac6709" target="_blank">DeepLearning.AI</a></li>
+          <li><strong>LangChain Chat with Your Data:</strong> <a href="https://learn.deeplearning.ai/accomplishments/9d3e8aa9-8aeb-445a-be02-d80fd494d1f9" target="_blank">DeepLearning.AI</a></li>
+        </ul>
+      </div>
 
-            function validateEmail(email) {
-                var re = /\S+@\S+\.\S+/;
-                return re.test(email);
-            }
-        </script>
+      <!-- TAB 2: PUBLICACIONES -->
+	<div class="tab-panel" id="content-tab2" role="tabpanel">
+	  <h2 data-key="tab2-title1">Artículos en Revistas</h2>
+	  <ul class="pub-list">
+	    <li>
+	      <span class="pub-title">ODP-DASHBOARD: Enhancing Marine Species Conservation in the South Atlantic through Linked Open Data Integration.</span>
+	      <a href="https://journal.info.unlp.edu.ar/JCST/article/view/3475" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	  </ul>
 
-        <footer>
-            <p>Gustavo Marcelo Nuñez &copy; 2024</p>
-        </footer>
-        
-    </body>
+	  <h2 data-key="tab2-title2">Papers</h2>
+	  <ul class="pub-list">
+	    <li>
+	      <span class="pub-title">Integración de Grafos de Conocimiento y Modelos RAG para la Gestión Inteligente de Datos Oceanográficos.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/183852" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Digitizing and Structuring Early Marine Biodiversity Records: A GraphRAG-Based Methodology.</span>
+	      <a href="https://zenodo.org/records/16912811" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Modelo de Redes Neuronales Convolucionales para la Detección, Clasificación y Conteo De Elefantes Marinos a Partir de Imágenes Digitales.</span>
+	      <a href="https://wicc2024.unp.edu.ar/images/libros/LibroDeActasWICC2024.pdf#page=285" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	  </ul>
+	
+	  <h2>Short Papers</h2>
+	  <ul class="pub-list">
+	    <li>
+	      <span class="pub-title">Integrating Oceanographic Sensor Data Using SSN/SOSA Ontology.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/155442" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Knowledge Graphs para accesibilidad y reutilización de activos digitales del Mar Argentino.</span>
+	      <a href="http://sedici.unlp.edu.ar/handle/10915/162004" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Análisis Visual para Datos Abiertos Enlazados vinculados a las Ciencias de Mar.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/149447" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Democratizing Argentine Marine Science Data Through Linked Open Data.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/149638" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Visual Analytics for Linked Open Data in Marine Sciences.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/140643" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Extracción y Explotación de Conocimiento para la Gestión en Línea de Datos en Ciencias del Mar.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/143371" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	    <li>
+	      <span class="pub-title">Mapyzer: una herramienta de carga y visualización de datos espacio-temporales.</span>
+	      <a href="https://sedici.unlp.edu.ar/handle/10915/130456" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	  </ul>
+	
+	  <h2 data-key="tab2-title3">Conferencias</h2>
+	  <ul class="pub-list">
+	    <li>
+	      <span class="pub-title">OBISBot: Enhancing Access to Marine Biodiversity Data through AI.</span>
+	      <span class="pub-meta" data-key="pub-iodc-meta">International Ocean Data Conference III (IODC-III) — Marzo 2025, Santa Marta, Colombia.</span>
+	      <a href="https://oceandataconference.org/iodc-iii-programme" target="_blank" class="pub-link" data-key="pub-link-text">→ Ver artículo</a>
+	    </li>
+	  </ul>
+	</div>
+
+      <!-- TAB 3: EXPERIENCIA -->
+      <div class="tab-panel" id="content-tab3" role="tabpanel">
+        <h2 data-key="tab3-title0">Investigación</h2>
+        <ul class="exp-list">
+	  <li>
+            <div class="exp-company">CESIMAR - CENPAT - CONICET</div>
+            <div class="exp-period" data-key="exp0-period">Agosto 2024 — Presente</div>
+            <div class="exp-stack">Knowledge Graphs · RAG · GraphRAG · LLM · Python</div>
+          </li>
+        </ul>
+        <h2 data-key="tab3-title1">Desarrollo de Software</h2>
+        <ul class="exp-list">
+          <li>
+            <div class="exp-company">CyberArg Sistemas</div>
+            <div class="exp-period" data-key="exp1-period">Marzo 2023 — Julio 2024</div>
+            <div class="exp-stack">PHP · Laravel · Vue · Node · SQL</div>
+          </li>
+          <li>
+            <div class="exp-company">Chesca S.A.</div>
+            <div class="exp-period" data-key="exp2-period">Septiembre 2021 — Enero 2022</div>
+            <div class="exp-stack">WordPress · Joomla · PHP · SQL</div>
+          </li>
+          <li>
+            <div class="exp-company" data-key="exp3-company">Laboratorio de Informática — UNPSJB</div>
+            <div class="exp-period" data-key="exp3-period">Abril 2021 — Marzo 2023</div>
+            <div class="exp-stack">Angular · Bootstrap · Java · Node · C · SQL</div>
+          </li>
+          <li>
+            <div class="exp-company" data-key="exp4-company">Pasantía — UNPSJB</div>
+            <div class="exp-period" data-key="exp4-period">Septiembre 2020 — Octubre 2021</div>
+            <div class="exp-stack">Angular · Bootstrap · JavaScript · Node · PostgreSQL</div>
+          </li>
+        </ul>
+
+        <h2 data-key="tab3-title2">Instrucción Académica</h2>
+        <ul class="exp-list">
+          <li>
+            <div class="exp-company" data-key="aca1-company">Auxiliar en Análisis Matemático — UNPSJB</div>
+            <div class="exp-period" data-key="aca1-period">Agosto 2021 — Julio 2024</div>
+          </li>
+          <li>
+            <div class="exp-company" data-key="aca2-company">Tutor Alumno — UNPSJB</div>
+            <div class="exp-period" data-key="aca2-period">Abril 2019 — Marzo 2024</div>
+          </li>
+          <li>
+            <div class="exp-company" data-key="aca3-company">Profesor de Informática — Fundación de Altos Estudios en Ciencias Comerciales</div>
+            <div class="exp-period" data-key="aca3-period">Mayo 2022 — Agosto 2022</div>
+          </li>
+          <li>
+            <div class="exp-company" data-key="aca4-company">Profesor de Tecnologías Móviles — UNPSJB</div>
+            <div class="exp-period" data-key="aca4-period">Septiembre 2019 — Diciembre 2019</div>
+          </li>
+          <li>
+            <div class="exp-company" data-key="aca5-company">Profesor de Computación — UNPSJB</div>
+            <div class="exp-period" data-key="aca5-period">Septiembre 2019 — Diciembre 2019</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- TAB 4: CONTACTO -->
+      <div class="tab-panel" id="content-tab4" role="tabpanel">
+        <h2 data-key="tab4-title1">Contacto</h2>
+        <form id="contact-form" novalidate>
+          <input type="hidden" name="contact_number" value="697483">
+          <div class="form-group">
+            <label for="user_email" data-key="email-label">Email</label>
+            <input type="email" id="user_email" name="user_email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="user_message" data-key="message-title">Mensaje</label>
+            <textarea id="user_message" name="message" rows="5" placeholder="Escribí tu mensaje acá..." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button data-key="send-button" id="send-button" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+    </div><!-- /tabs-wrapper -->
+  </main>
+
+  <footer>
+    <p>Gustavo Marcelo Nuñez &copy; 2025</p>
+  </footer>
+
+  <div id="myModal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button id="modal-button">OK</button>
+    </div>
+  </div>
+
+  <script src="public/js/modal.js"></script>
+
+  <script>
+    (function() {
+      emailjs.init({ publicKey: "xCyMBkIbTByRqBg54" });
+    })();
+
+    function showModalMessage(text) {
+      var modal = document.getElementById('myModal');
+      var msg = document.getElementById('modal-message');
+      if (msg) msg.textContent = text;
+      modal.style.display = 'flex';
+      modal.style.alignItems = 'center';
+      modal.style.justifyContent = 'center';
+    }
+
+    document.getElementById('modal-button').addEventListener('click', function() {
+      document.getElementById('myModal').style.display = 'none';
+    });
+
+    document.getElementById('send-button').addEventListener('click', function(event) {
+      event.preventDefault();
+      sendEmail();
+    });
+
+    function sendEmail() {
+      var lang = localStorage.getItem('lang') || 'es';
+      var msgs = {
+        es: {
+          invalidEmail: 'Por favor, ingresá una dirección de correo electrónico válida.',
+          emptyMsg:     'Por favor, ingresá un mensaje.',
+          success:      '¡Mensaje enviado correctamente!',
+          error:        'Error al enviar: '
+        },
+        en: {
+          invalidEmail: 'Please enter a valid email address.',
+          emptyMsg:     'Please enter a message.',
+          success:      'Message sent successfully!',
+          error:        'Error sending message: '
+        }
+      };
+      var t = msgs[lang] || msgs.es;
+
+      var email = document.getElementById("user_email").value;
+      var message = document.getElementById("user_message").value;
+
+      if (!validateEmail(email)) { showModalMessage(t.invalidEmail); return; }
+      if (message.trim() === "") { showModalMessage(t.emptyMsg); return; }
+
+      emailjs.sendForm('contact_service', 'contact_form', document.getElementById('contact-form'))
+        .then(function() {
+          showModalMessage(t.success);
+          document.getElementById('modal-button').addEventListener('click', function() {
+            window.location.reload();
+          });
+        }, function(error) {
+          showModalMessage(t.error + JSON.stringify(error));
+        });
+    }
+
+    function validateEmail(email) {
+      return /\S+@\S+\.\S+/.test(email);
+    }
+  </script>
+
+</body>
 </html>
