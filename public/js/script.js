@@ -69,6 +69,32 @@ const kgNodeText = {
     uns:      { label: 'UNS',               desc: 'Universidad Nacional del Sur, Bahía Blanca. The institution where I pursue my PhD in Computer Science.' },
     cenpat:   { label: 'CESIMAR-CENPAT',    desc: 'Center for the Study of Marine Systems, part of the Patagonian National Center (CENPAT-CONICET), Puerto Madryn. Where I carry out my research activities.' },
     graphrag: { label: 'GraphRAG',          desc: 'Graph-based extension of RAG (Retrieval-Augmented Generation), used as a retrieval mechanism in my research.' }
+  },
+  it: {
+    me:       { label: 'Gustavo M. Nuñez', desc: 'Dottorando in Informatica, con ricerche sull\'IA neuro-simbolica e i sistemi di conoscenza marina.' },
+    llm:      { label: 'LLM',               desc: 'Grandi Modelli Linguistici utilizzati nella mia ricerca: GPT-4o-mini, Mixtral 8×7B, Mistral 7B, Ministral 14B, LLaMA3 8B, tra gli altri, per attività di estrazione della conoscenza e risposta a domande.' },
+    conicet:  { label: 'CONICET',           desc: 'Consiglio Nazionale delle Ricerche Scientifiche e Tecniche (Argentina). L\'istituzione attraverso cui svolgo la mia ricerca dottorale.' },
+    hermes:   { label: 'HERMES',            desc: 'Piattaforma GraphRAG che genera e confronta Knowledge Graph da un corpus storico di biologia marina argentina, con verifica simbolica post-hoc.' },
+    botgbif:  { label: 'BotGBIF',           desc: 'Bot conversazionale che consente di interrogare i dati di biodiversità GBIF in linguaggio naturale.' },
+    aquamind: { label: 'AquaMind',          desc: 'Sistema multi-agente che integra WoRMS e OBIS per l\'analisi di occorrenza di specie marine tramite linguaggio naturale.' },
+    gf:       { label: 'Grounding Fidelity',desc: 'Metrica che misura in che misura le risposte generate da un sistema RAG/GraphRAG sono tracciabili al grafo simbolico sottostante. Parte centrale della valutazione della mia tesi dottorale.' },
+    obisbot:  { label: 'OBIS Bot',          desc: 'Bot conversazionale per esplorare i dati dell\'Ocean Biodiversity Information System (OBIS) in linguaggio naturale.' },
+    uns:      { label: 'UNS',               desc: 'Universidad Nacional del Sur, Bahía Blanca. L\'istituzione dove svolgo il mio dottorato in Informatica.' },
+    cenpat:   { label: 'CESIMAR-CENPAT',    desc: 'Centro per lo Studio dei Sistemi Marini, parte del Centro Nazionale Patagonico (CENPAT-CONICET), Puerto Madryn. Dove svolgo le mie attività di ricerca.' },
+    graphrag: { label: 'GraphRAG',          desc: 'Estensione di RAG (Retrieval-Augmented Generation) basata su grafi di conoscenza, utilizzata come meccanismo di recupero nella mia ricerca.' }
+  },
+  it: {
+    me:       { label: 'Gustavo M. Nuñez', desc: 'Dottorando in Scienze Informatiche, lavoro su IA neuro-simbolica e sistemi di conoscenza marina.' },
+    llm:      { label: 'LLM',               desc: 'Large Language Models utilizzati nella mia ricerca: GPT-4o-mini, Mixtral 8×7B, Mistral 7B, Ministral 14B, LLaMA3 8B, tra altri, per attività di estrazione della conoscenza e risposta a domande.' },
+    conicet:  { label: 'CONICET',           desc: 'Consiglio Nazionale delle Ricerche Scientifiche e Tecniche (Argentina). Ente attraverso il quale svolgo la mia ricerca dottorale.' },
+    hermes:   { label: 'HERMES',            desc: 'Piattaforma GraphRAG che genera e confronta Knowledge Graph a partire da un corpus storico di biologia marina argentina, con verifica simbolica post-hoc.' },
+    botgbif:  { label: 'BotGBIF',           desc: 'Bot conversazionale che consente di consultare dati di biodiversità GBIF in linguaggio naturale.' },
+    aquamind: { label: 'AquaMind',          desc: 'Sistema multi-agente che integra WoRMS e OBIS per l\'analisi della presenza di specie marine tramite linguaggio naturale.' },
+    gf:       { label: 'Grounding Fidelity',desc: 'Metrica che misura in che misura le risposte generate da un sistema RAG/GraphRAG siano tracciabili al grafo simbolico sottostante. Parte centrale della valutazione della mia tesi dottorale.' },
+    obisbot:  { label: 'OBIS Bot',          desc: 'Bot conversazionale per esplorare i dati dell\'Ocean Biodiversity Information System (OBIS) in linguaggio naturale.' },
+    uns:      { label: 'UNS',               desc: 'Universidad Nacional del Sur, Bahía Blanca. L\'istituzione dove svolgo il mio dottorato in Scienze Informatiche.' },
+    cenpat:   { label: 'CESIMAR-CENPAT',    desc: 'Centro per lo Studio dei Sistemi Marini, parte del Centro Nazionale Patagonico (CENPAT-CONICET), Puerto Madryn. Dove svolgo le mie attività di ricerca.' },
+    graphrag: { label: 'GraphRAG',          desc: 'Estensione di RAG (Retrieval-Augmented Generation) basata su grafi di conoscenza, utilizzata come meccanismo di recupero nella mia ricerca.' }
   }
 };
 
@@ -201,21 +227,39 @@ function buildKnowledgeGraph() {
 
     g.addEventListener('click', function (ev) {
       ev.stopPropagation();
+      ev.preventDefault();
       showKgPopup(n);
     });
+
+    g.addEventListener('touchend', function (ev) {
+      ev.stopPropagation();
+      ev.preventDefault();
+      showKgPopup(n);
+    }, { passive: false });
 
     nodesGroup.appendChild(g);
   });
 
   if (popup && !popup.dataset.bound) {
     popup.dataset.bound = 'true';
-    document.addEventListener('click', function (ev) {
-      if (!popup.contains(ev.target)) {
+
+    function closeIfOutside(ev) {
+      if (!popup.contains(ev.target) && !ev.target.closest('.kg-node-group')) {
         hideKgPopup();
       }
-    });
+    }
+
+    document.addEventListener('click', closeIfOutside);
+    document.addEventListener('touchend', closeIfOutside);
+
     const closeBtn = popup.querySelector('.kg-popup-close');
-    if (closeBtn) closeBtn.addEventListener('click', hideKgPopup);
+    if (closeBtn) {
+      closeBtn.addEventListener('click', hideKgPopup);
+      closeBtn.addEventListener('touchend', function(ev) {
+        ev.preventDefault();
+        hideKgPopup();
+      });
+    }
   }
 }
 

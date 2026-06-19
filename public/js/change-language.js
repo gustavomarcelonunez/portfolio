@@ -239,6 +239,126 @@ const i18n = {
     "email-label":    "Email",
     "message-title":  "Message",
     "send-button":    "Send",
+  },
+
+  it: {
+    // Hero
+    "greetings":    "> Salve! Mi chiamo",
+    "intro1":       "Sono Laureato in Informatica presso l'Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), e attualmente sto svolgendo un dottorato in Scienze Informatiche presso l'Universidad Nacional del Sur (UNS), Bahía Blanca. Svolgo le mie attività di ricerca presso il CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nQuesto spazio riflette i miei progetti, ricerche e pubblicazioni in IA, sistemi di conoscenza e scienze del mare. Se vuoi saperne di più, non esitare a contattarmi.",
+    "cv-link":      "Scarica CV →",
+
+    // Tabs
+    "tab-button-graph":     "Grafo",
+    "tab-button0":          "Progetti",
+    "tab-button-research":  "Ricerca",
+    "tab-button1":          "Percorso accademico",
+    "tab-button2":          "Pubblicazioni",
+    "tab-button3":          "Esperienza",
+    "tab-button4":          "Contatto",
+
+    // Proyectos — tags
+    "proj-hermes-tag":   "GraphRAG · KG · LLM",
+    "proj-aquamind-tag": "Multi-agente · Web Semantico",
+    "proj-botgbif-tag":  "Bot · Linked Open Data",
+    "proj-obisbot-tag":  "Bot · Oceanografia",
+    "proj-odp-tag":      "Dashboard · LOD",
+    "proj-mapyzer-tag":  "Visualizzazione · GIS",
+
+    // Proyectos — descripciones
+    "proj-hermes-desc":   "Piattaforma web GraphRAG che genera e confronta Knowledge Graph a partire da un corpus storico di biologia marina argentina (Carrara, 1952). Supporta 6 KG e 4 LLM per Q&A in spagnolo con verifica simbolica post-hoc.",
+    "proj-aquamind-desc": "Sistema multi-agente per la consultazione di specie marine che integra WoRMS e OBIS tramite linguaggio naturale. Combina recupero di informazioni, ragionamento semantico e LLM.",
+    "proj-botgbif-desc":  "Bot di consultazione sulla biodiversità che accede ai dati GBIF tramite linguaggio naturale. Facilita l'accesso ai record di presenza delle specie per ricercatori e pubblico generale.",
+    "proj-obisbot-desc":  "Bot conversazionale per l'esplorazione dei dati dell'Ocean Biodiversity Information System (OBIS). Consente query in linguaggio naturale su distribuzione e presenza di specie marine.",
+    "proj-odp-desc":      "Dashboard di visualizzazione per dati aperti collegati sulla conservazione delle specie marine nell'Atlantico del Sud. Integra fonti eterogenee tramite Linked Open Data.",
+    "proj-mapyzer-desc":  "Strumento di caricamento e visualizzazione di dati spazio-temporali per le scienze del mare. Consente di esplorare dataset georeferenziati in modo interattivo.",
+    "proj-visit":         "Vedi progetto →",
+    "kg-popup-link-text": "Visita →",
+
+    // Investigación
+    "research-title1":  "Linea di ricerca dottorale",
+    "research-intro":   "La mia ricerca dottorale si colloca all'intersezione tra l'IA neuro-simbolica e i sistemi di conoscenza marina. Studio come i grafi di conoscenza marina possano essere integrati con i Large Language Models attraverso framework di recupero e ragionamento neuro-simbolico, per sostenere un'inferenza fondata (<em>grounded</em>) e l'interazione in linguaggio naturale su dati eterogenei delle scienze del mare — un approccio noto come <em>ontology-grounded reasoning</em>. Il lavoro esplora metodi di recupero basati su grafi, incluso GraphRAG, insieme ad architetture multi-agente per l'estrazione, il recupero e l'analisi della conoscenza in dati di biodiversità marina e oceanografia. Come parte della valutazione, definisco metriche come <strong>solidità semantica (<em>semantic soundness</em>)</strong> e <strong>fedeltà di fondazione (<em>grounding fidelity</em>)</strong> per misurare in che misura le risposte generate siano tracciabili al grafo simbolico sottostante.",
+    "research-title2":  "Supervisione",
+    "advisor1-role":    "Direttore — Universidad Nacional del Sur (UNS)",
+    "advisor2-role":    "Co-direttore — CESIMAR-CONICET / UNPSJB",
+    "research-title3":  "Affiliazione istituzionale",
+    "research-period":  "Agosto 2024 — Presente",
+    "research-title4":  "Aree di interesse",
+    "rtag1": "IA neuro-simbolica",
+    "rtag2": "Grafi di conoscenza",
+    "rtag3": "RAG / GraphRAG",
+    "rtag4": "Web semantico",
+    "rtag5": "Valutazione di LLM",
+    "rtag6": "Dati aperti collegati",
+
+    // Historia académica
+    "tab1-title1":  "Formazione Universitaria",
+    "tab1-title2":  "Corsi",
+    "tab1-title3":  "Certificazioni",
+    "phd":          "<strong>2024 - presente:</strong> Dottorato in Scienze Informatiche. Universidad Nacional del Sur (UNS), Puerto Madryn.",
+    "degree":       "<strong>2018 - 2024:</strong> Laurea in Informatica. UNPSJB, Puerto Madryn.",
+    "analyst":      "<strong>2018 - 2021:</strong> Analista Programmatore Universitario. UNPSJB, Puerto Madryn.",
+    "course7":      "Fondamenti di Intelligenza Artificiale Spiegabile.",
+    "course7-meta": "UNS, 2026, Bahía Blanca, Argentina.",
+    "course6":      "Riconoscimento di Pattern e Apprendimento Automatico.",
+    "course6-meta": "UNS, 2025, Bahía Blanca, Argentina.",
+    "course5":      "Elaborazione di Immagini e Visione Artificiale I.",
+    "course5-meta": "UNS, 2025, Bahía Blanca, Argentina.",
+    "course-adapt": "Corso di formazione sulle migliori pratiche oceaniche.",
+    "course-gov":   "Governance ed Etica nella Gestione dell'Informazione.",
+    "course-gov-meta": "UNS, 2024, Bahía Blanca.",
+    "course4":      "Introduzione al linguaggio R e Python applicato alla Scienza dei Dati.",
+    "course3":      "Apprendimento profondo per rinforzo.",
+    "course2":      "Classificatori probabilistici nell'apprendimento automatico.",
+    "course1":      "Webapp dal back-end al front-end.",
+
+    // Publicaciones
+    "tab2-title1":    "Articoli su Riviste",
+    "tab2-title2":    "Paper",
+    "tab2-title2b":   "Paper",
+    "tab2-title3":    "Conferenze",
+    "pub-link-text":  "→ Vedi articolo",
+    "pub-venue-1":    "Journal of Computer Science & Technology (JCST) — Ottobre 2024.",
+    "pub-venue-2":    "Workshop de Investigadores en Ciencias de la Computación (WICC) 2025 — Universidad Nacional de Cuyo (UNCUYO), Mendoza, Argentina.",
+    "pub-venue-3":    "1st GOBLIN Workshop on Knowledge Graph Technologies (GOBLIN25) — Lipsia, Germania, 2025.",
+    "pub-venue-4":    "Workshop de Investigadores en Ciencias de la Computación (WICC) 2024 — Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), Puerto Madryn, Argentina.",
+    "pub-venue-5":    "XI Jornadas de Cloud Computing, Big Data & Emerging Topics — La Plata, Argentina, giugno 2023.",
+    "pub-venue-6":    "Workshop de Investigadores en Ciencias de la Computación (WICC) 2023 — Junín, Argentina.",
+    "pub-venue-7":    "Congreso Argentino de Ciencias de la Computación (CACIC) 2022 — Universidad Nacional de La Rioja (UNLaR), La Rioja, Argentina.",
+    "pub-venue-8":    "Congreso Argentino de Ciencias de la Computación (CACIC) 2022 — Universidad Nacional de La Rioja (UNLaR), La Rioja, Argentina.",
+    "pub-venue-9":    "X Jornadas de Cloud Computing, Big Data & Emerging Topics — La Plata, Argentina, 2022.",
+    "pub-venue-10":   "Workshop de Investigadores en Ciencias de la Computación (WICC) 2022 — Mendoza, Argentina.",
+    "pub-venue-11":   "Congreso Argentino de Ciencias de la Computación (CACIC) 2021 — Modalità virtuale, ottobre 2021.",
+    "pub-iodc-meta":  "International Ocean Data Conference III (IODC-III) — Marzo 2025, Santa Marta, Colombia.",
+
+    // Experiencia — Desarrollo de Software
+    "tab3-title1":    "Sviluppo Software",
+    "exp1-period":    "Marzo 2023 — Luglio 2024",
+    "exp2-period":    "Settembre 2021 — Gennaio 2022",
+    "exp3-company":   "Laboratorio di Informatica — UNPSJB",
+    "exp3-period":    "Aprile 2021 — Marzo 2023",
+    "exp4-company":   "Tirocinio — UNPSJB",
+    "exp4-period":    "Settembre 2020 — Ottobre 2021",
+
+    // Experiencia — Instrucción Académica
+    "tab3-title2":    "Didattica Universitaria",
+    "aca0-company":   "Assistente di Elementi di Informatica — UNPSJB",
+    "aca0-period":    "Febbraio 2025 — Presente",
+    "aca1-company":   "Assistente di Analisi Matematica — UNPSJB",
+    "aca1-period":    "Agosto 2021 — Luglio 2024",
+    "aca2-company":   "Tutor Studenti — UNPSJB",
+    "aca2-period":    "Aprile 2019 — Marzo 2024",
+    "aca3-company":   "Docente di Informatica — Fundación de Altos Estudios en Ciencias Comerciales",
+    "aca3-period":    "Maggio 2022 — Agosto 2022",
+    "aca4-company":   "Docente di Tecnologie Mobili — UNPSJB",
+    "aca4-period":    "Settembre 2019 — Dicembre 2019",
+    "aca5-company":   "Docente di Informatica — UNPSJB",
+    "aca5-period":    "Settembre 2019 — Dicembre 2019",
+
+    // Contacto
+    "tab4-title1":    "Contatto",
+    "email-label":    "Email",
+    "message-title":  "Messaggio",
+    "send-button":    "Invia",
   }
 };
 
@@ -306,8 +426,8 @@ function applyLanguage(lang) {
 
   const emailInput = document.getElementById('user_email');
   const msgTextarea = document.getElementById('user_message');
-  if (emailInput) emailInput.placeholder = lang === 'es' ? 'tu@email.com' : 'your@email.com';
-  if (msgTextarea) msgTextarea.placeholder = lang === 'es' ? 'Escribí tu mensaje acá...' : 'Write your message here...';
+  if (emailInput) emailInput.placeholder = lang === 'es' ? 'tu@email.com' : lang === 'it' ? 'tuo@email.com' : 'your@email.com';
+  if (msgTextarea) msgTextarea.placeholder = lang === 'es' ? 'Escribí tu mensaje acá...' : lang === 'it' ? 'Scrivi il tuo messaggio qui...' : 'Write your message here...';
 
   document.documentElement.lang = lang;
 }

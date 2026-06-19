@@ -20,6 +20,7 @@
       <div class="language-buttons">
         <img src="public/images/spain-country-flag-round-icon.png" alt="Español" onclick="changeLanguage('es')" title="Español">
         <img src="public/images/uk-flag-round-circle-icon.png" alt="English" onclick="changeLanguage('en')" title="English">
+        <img src="public/images/italy-country-flag-round-icon.png" alt="Italiano" onclick="changeLanguage('it')" title="Italiano">
       </div>
       <div class="social-links">
         <a href="https://github.com/gustavomarcelonunez" target="_blank" title="GitHub" aria-label="GitHub">
@@ -468,6 +469,12 @@
           emptyMsg:     'Please enter a message.',
           success:      'Message sent successfully!',
           error:        'Error sending message: '
+        },
+        it: {
+          invalidEmail: 'Per favore, inserisci un indirizzo email valido.',
+          emptyMsg:     'Per favore, inserisci un messaggio.',
+          success:      'Messaggio inviato con successo!',
+          error:        'Errore nell\'invio: '
         }
       };
       var t = msgs[lang] || msgs.es;
