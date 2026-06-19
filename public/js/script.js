@@ -152,24 +152,26 @@ function buildKnowledgeGraph() {
   });
 
   // Distribución equilibrada en anillos
-  const rings = [150, 180, 205];
+  const ringsX = [220, 270, 300];
+  const ringsY = [150, 180, 205];
   const rotation = Math.random() * 360;
-
+ 
   const satellites = satellitesBase.map((node, i, arr) => ({
     ...node,
-
+ 
     angle:
       rotation +
       (360 / arr.length) * i +
       (Math.random() * 24 - 12),
-
-    dist: rings[i % rings.length]
+ 
+    distX: ringsX[i % ringsX.length],
+    distY: ringsY[i % ringsY.length]
   }));
 
   satellites.forEach(function (n) {
     const rad = n.angle * Math.PI / 180;
-    n.x = Math.round(cx + n.dist * Math.cos(rad));
-    n.y = Math.round(cy + n.dist * Math.sin(rad));
+    n.x = Math.round(cx + n.distX * Math.cos(rad));
+    n.y = Math.round(cy + n.distY * Math.sin(rad));
   });
 
   const me = Object.assign({ id: 'me', x: cx, y: cy, r: 36, type: 'n-hermes', delay: 0 }, text.me);

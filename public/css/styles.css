@@ -278,8 +278,7 @@ h1 {
   border: 1px solid var(--border);
   border-top: none;
   border-radius: 0 0 var(--radius) var(--radius);
-  padding: 32px;
-  min-height: 320px;
+  padding: 10p;
 }
 
 .tab-panel {
@@ -303,7 +302,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 0 4px;
   position: relative;
 }
 
@@ -904,12 +902,10 @@ footer p {
   }
 
   .tabs-wrapper {
-    padding: 20px 16px;
+    padding: 10px 10px;
   }
 
-  #content-no-tab {
-    margin: -20px -16px;
-  }
+
 
   .kg-popup {
     width: 90%;
@@ -917,7 +913,7 @@ footer p {
   }
 
   .kg-container {
-    padding: 8px 0 0;
+    padding: 4px;
   }
 
   #kgSvg {
