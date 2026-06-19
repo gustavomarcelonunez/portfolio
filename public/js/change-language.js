@@ -6,6 +6,7 @@ const i18n = {
     "cv-link":      "Descargar CV →",
 
     // Tabs
+    "tab-button-graph":     "Grafo",
     "tab-button0":          "Proyectos",
     "tab-button-research":  "Investigación",
     "tab-button1":          "Historia académica",
@@ -30,6 +31,7 @@ const i18n = {
     "proj-odp-desc":      "Dashboard de visualización para datos abiertos enlazados sobre conservación de especies marinas en el Atlántico Sur. Integra fuentes heterogéneas mediante Linked Open Data.",
     "proj-mapyzer-desc":  "Herramienta de carga y visualización de datos espacio-temporales para ciencias del mar. Permite explorar datasets georreferenciados de forma interactiva.",
     "proj-visit":         "Ver proyecto →",
+    "kg-popup-link-text": "Visitar →",
 
     // Investigación
     "research-title1":  "Línea doctoral",
@@ -125,6 +127,7 @@ const i18n = {
     "cv-link":      "Download CV →",
 
     // Tabs
+    "tab-button-graph":     "Graph",
     "tab-button0":          "Projects",
     "tab-button-research":  "Research",
     "tab-button1":          "Academic history",
@@ -149,6 +152,7 @@ const i18n = {
     "proj-odp-desc":      "Visualization dashboard for linked open data on marine species conservation in the South Atlantic. Integrates heterogeneous sources through Linked Open Data.",
     "proj-mapyzer-desc":  "Spatio-temporal data loading and visualization tool for marine sciences. Allows interactive exploration of georeferenced datasets.",
     "proj-visit":         "View project →",
+    "kg-popup-link-text": "Visit →",
 
     // Investigación
     "research-title1":  "Doctoral research",
@@ -245,6 +249,9 @@ function changeLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('lang', lang);
   applyLanguage(lang);
+  if (typeof buildKnowledgeGraph === 'function') {
+    buildKnowledgeGraph();
+  }
 }
 
 function applyLanguage(lang) {
