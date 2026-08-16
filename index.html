@@ -11,7 +11,8 @@
   <script defer src="public/js/script.js"></script>
   <script defer src="public/js/change-language.js"></script>
   <title>Gustavo Marcelo Nuñez</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+  <script defer src="public/js/contact.js"></script>
 </head>
 <body>
 
@@ -401,15 +402,26 @@
       <div class="tab-panel" id="content-tab5" role="tabpanel">
         <h2 data-key="tab4-title1">Contacto</h2>
         <form id="contact-form" novalidate>
-          <input type="hidden" name="contact_number" value="697483">
+          <div class="form-group">
+            <label for="user_name" data-key="name-label">Nombre</label>
+            <input type="text" id="user_name" name="name" maxlength="100" autocomplete="name" placeholder="Tu nombre" required>
+          </div>
           <div class="form-group">
             <label for="user_email" data-key="email-label">Email</label>
-            <input type="email" id="user_email" name="user_email" placeholder="tu@email.com" required>
+            <input type="email" id="user_email" name="email" maxlength="254" autocomplete="email" placeholder="tu@email.com" required>
           </div>
           <div class="form-group">
             <label for="user_message" data-key="message-title">Mensaje</label>
-            <textarea id="user_message" name="message" rows="5" placeholder="Escribí tu mensaje acá..." required></textarea>
+            <textarea id="user_message" name="message" rows="5" minlength="10" maxlength="4000" placeholder="Escribí tu mensaje acá..." required></textarea>
           </div>
+          <div class="form-trap" aria-hidden="true">
+            <label for="company_website">Sitio web</label>
+            <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="turnstile-wrapper">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAESAluc7QThSVs5c" data-theme="dark"></div>
+          </div>
+          <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
           <div class="form-actions">
             <button data-key="send-button" id="send-button" type="submit">Enviar</button>
           </div>
@@ -431,75 +443,6 @@
   </div>
 
   <script src="public/js/modal.js"></script>
-
-  <script>
-    (function() {
-      emailjs.init({ publicKey: "xCyMBkIbTByRqBg54" });
-    })();
-
-    function showModalMessage(text) {
-      var modal = document.getElementById('myModal');
-      var msg = document.getElementById('modal-message');
-      if (msg) msg.textContent = text;
-      modal.style.display = 'flex';
-      modal.style.alignItems = 'center';
-      modal.style.justifyContent = 'center';
-    }
-
-    document.getElementById('modal-button').addEventListener('click', function() {
-      document.getElementById('myModal').style.display = 'none';
-    });
-
-    document.getElementById('send-button').addEventListener('click', function(event) {
-      event.preventDefault();
-      sendEmail();
-    });
-
-    function sendEmail() {
-      var lang = localStorage.getItem('lang') || 'es';
-      var msgs = {
-        es: {
-          invalidEmail: 'Por favor, ingresá una dirección de correo electrónico válida.',
-          emptyMsg:     'Por favor, ingresá un mensaje.',
-          success:      '¡Mensaje enviado correctamente!',
-          error:        'Error al enviar: '
-        },
-        en: {
-          invalidEmail: 'Please enter a valid email address.',
-          emptyMsg:     'Please enter a message.',
-          success:      'Message sent successfully!',
-          error:        'Error sending message: '
-        },
-        it: {
-          invalidEmail: 'Per favore, inserisci un indirizzo email valido.',
-          emptyMsg:     'Per favore, inserisci un messaggio.',
-          success:      'Messaggio inviato con successo!',
-          error:        'Errore nell\'invio: '
-        }
-      };
-      var t = msgs[lang] || msgs.es;
-
-      var email = document.getElementById("user_email").value;
-      var message = document.getElementById("user_message").value;
-
-      if (!validateEmail(email)) { showModalMessage(t.invalidEmail); return; }
-      if (message.trim() === "") { showModalMessage(t.emptyMsg); return; }
-
-      emailjs.sendForm('contact_service', 'contact_form', document.getElementById('contact-form'))
-        .then(function() {
-          showModalMessage(t.success);
-          document.getElementById('modal-button').addEventListener('click', function() {
-            window.location.reload();
-          });
-        }, function(error) {
-          showModalMessage(t.error + JSON.stringify(error));
-        });
-    }
-
-    function validateEmail(email) {
-      return /\S+@\S+\.\S+/.test(email);
-    }
-  </script>
 
 </body>
 </html>

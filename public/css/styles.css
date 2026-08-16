@@ -734,6 +734,28 @@ h1 {
   box-shadow: 0 0 14px rgba(245, 68, 252, 0.2);
 }
 
+#send-button:disabled { cursor: wait; opacity: 0.55; box-shadow: none; }
+
+.form-trap {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.turnstile-wrapper { min-height: 65px; margin: 4px 0 10px; }
+
+.contact-status {
+  min-height: 1.5em;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.contact-status-error { color: #ff7575; }
+
 /* ============================================================
    MODAL
    ============================================================ */

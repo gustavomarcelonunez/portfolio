@@ -1,0 +1,13 @@
+name = "portfolio-contact"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+[[kv_namespaces]]
+binding = "CONTACT_TOKENS"
+id = "8de212e6003749139b8bc7fc455b7231"
+
+[vars]
+ALLOWED_ORIGIN = "https://gmnunez.com.ar"
+PUBLIC_WORKER_URL = "https://portfolio-contact.gnunez-f56.workers.dev"
+CONTACT_RECIPIENT = "gnunez@ing.unp.edu.ar"
+MAIL_FROM = "Portfolio <contact@mail.gmnunez.com.ar>"

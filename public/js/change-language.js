@@ -115,6 +115,7 @@ const i18n = {
 
     // Contacto
     "tab4-title1":    "Contacto",
+    "name-label":     "Nombre",
     "email-label":    "Email",
     "message-title":  "Mensaje",
     "send-button":    "Enviar",
@@ -236,6 +237,7 @@ const i18n = {
 
     // Contacto
     "tab4-title1":    "Contact",
+    "name-label":     "Name",
     "email-label":    "Email",
     "message-title":  "Message",
     "send-button":    "Send",
@@ -356,6 +358,7 @@ const i18n = {
 
     // Contacto
     "tab4-title1":    "Contatto",
+    "name-label":     "Nome",
     "email-label":    "Email",
     "message-title":  "Messaggio",
     "send-button":    "Invia",
@@ -424,8 +427,10 @@ function applyLanguage(lang) {
     }
   });
 
+  const nameInput = document.getElementById('user_name');
   const emailInput = document.getElementById('user_email');
   const msgTextarea = document.getElementById('user_message');
+  if (nameInput) nameInput.placeholder = lang === 'es' ? 'Tu nombre' : lang === 'it' ? 'Il tuo nome' : 'Your name';
   if (emailInput) emailInput.placeholder = lang === 'es' ? 'tu@email.com' : lang === 'it' ? 'tuo@email.com' : 'your@email.com';
   if (msgTextarea) msgTextarea.placeholder = lang === 'es' ? 'Escribí tu mensaje acá...' : lang === 'it' ? 'Scrivi il tuo messaggio qui...' : 'Write your message here...';
 
