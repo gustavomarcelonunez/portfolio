@@ -4,6 +4,11 @@ const i18n = {
     "greetings":    "> Saludos! Mi nombre es",
     "intro1":       "Soy Licenciado en Informática egresado en la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), y actualmente realizo un doctorado en Ciencias de la Computación en la Universidad Nacional del Sur (UNS), Bahía Blanca. Desempeño mis actividades de investigación en CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nEste espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar. Si querés saber más, no dudes en contactarme.",
     "cv-link":      "Descargar CV →",
+    "positioning": "Doctorando especializado en Knowledge Graphs, LLMs y razonamiento neuro-simbólico aplicado a las ciencias del mar.",
+    "cta-research": "Ver investigación", "cta-projects": "Explorar proyectos",
+    "highlight-iswc": "Trabajo doctoral aceptado en el Doctoral Consortium",
+    "highlight-affiliation": "Investigación interdisciplinaria en IA y ciencias del mar",
+    "highlight-hermes": "Evaluación trazable de sistemas GraphRAG",
 
     // Tabs
     "tab-button-graph":     "Grafo",
@@ -30,6 +35,13 @@ const i18n = {
     "proj-obisbot-desc":  "Bot conversacional para exploración de datos del Ocean Biodiversity Information System (OBIS). Permite consultas en lenguaje natural sobre distribución y ocurrencia de especies marinas.",
     "proj-odp-desc":      "Dashboard de visualización para datos abiertos enlazados sobre conservación de especies marinas en el Atlántico Sur. Integra fuentes heterogéneas mediante Linked Open Data.",
     "proj-mapyzer-desc":  "Herramienta de carga y visualización de datos espacio-temporales para ciencias del mar. Permite explorar datasets georreferenciados de forma interactiva.",
+    "impact-label": "Aporte:",
+    "proj-hermes-impact": "Hace comparable la calidad estructural y el grounding de múltiples KGs y LLMs sobre un mismo corpus.",
+    "proj-aquamind-impact": "Unifica fuentes marinas distribuidas y reduce la complejidad de consulta para especialistas.",
+    "proj-botgbif-impact": "Democratiza el acceso a registros globales de ocurrencia sin exigir conocimientos de la API.",
+    "proj-obisbot-impact": "Acerca la exploración de datos oceánicos a usuarios mediante consultas conversacionales.",
+    "proj-odp-impact": "Integra datos enlazados y visualización para apoyar análisis de conservación marina.",
+    "proj-mapyzer-impact": "Convierte datasets espacio-temporales en mapas interactivos listos para explorar.",
     "proj-visit":         "Ver proyecto →",
     "kg-popup-link-text": "Visitar →",
 
@@ -119,6 +131,7 @@ const i18n = {
     "email-label":    "Email",
     "message-title":  "Mensaje",
     "send-button":    "Enviar",
+    "contact-intro": "Estoy abierto a colaboraciones académicas y tecnológicas en Knowledge Graphs, GraphRAG, evaluación de LLMs e informática marina. El correo ingresado será verificado antes de entregar el mensaje.",
   },
 
   en: {
@@ -126,6 +139,11 @@ const i18n = {
     "greetings":    "> Hi! My name is",
     "intro1":       "I hold a degree in Computer Science from the Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), and I am currently pursuing a PhD in Computer Science at the Universidad Nacional del Sur (UNS), Bahía Blanca. I carry out my research at CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nThis space reflects my projects, research and publications in AI, knowledge systems and marine science. Feel free to reach out!",
     "cv-link":      "Download CV →",
+    "positioning": "PhD candidate specializing in Knowledge Graphs, LLMs, and neuro-symbolic reasoning for marine science.",
+    "cta-research": "View research", "cta-projects": "Explore projects",
+    "highlight-iswc": "Doctoral work accepted at the Doctoral Consortium",
+    "highlight-affiliation": "Interdisciplinary research in AI and marine science",
+    "highlight-hermes": "Traceable evaluation of GraphRAG systems",
 
     // Tabs
     "tab-button-graph":     "Graph",
@@ -152,6 +170,13 @@ const i18n = {
     "proj-obisbot-desc":  "Conversational bot for exploring Ocean Biodiversity Information System (OBIS) data. Enables natural language queries about marine species distribution and occurrence.",
     "proj-odp-desc":      "Visualization dashboard for linked open data on marine species conservation in the South Atlantic. Integrates heterogeneous sources through Linked Open Data.",
     "proj-mapyzer-desc":  "Spatio-temporal data loading and visualization tool for marine sciences. Allows interactive exploration of georeferenced datasets.",
+    "impact-label": "Impact:",
+    "proj-hermes-impact": "Makes the structural quality and grounding of multiple KGs and LLMs comparable on the same corpus.",
+    "proj-aquamind-impact": "Unifies distributed marine sources and reduces query complexity for domain specialists.",
+    "proj-botgbif-impact": "Democratizes access to global occurrence records without requiring API expertise.",
+    "proj-obisbot-impact": "Brings ocean-data exploration closer to users through conversational queries.",
+    "proj-odp-impact": "Combines linked data and visualization to support marine conservation analysis.",
+    "proj-mapyzer-impact": "Turns spatio-temporal datasets into interactive, exploration-ready maps.",
     "proj-visit":         "View project →",
     "kg-popup-link-text": "Visit →",
 
@@ -241,6 +266,7 @@ const i18n = {
     "email-label":    "Email",
     "message-title":  "Message",
     "send-button":    "Send",
+    "contact-intro": "I am open to academic and technology collaborations in Knowledge Graphs, GraphRAG, LLM evaluation, and marine informatics. The email address entered will be verified before the message is delivered.",
   },
 
   it: {
@@ -248,6 +274,11 @@ const i18n = {
     "greetings":    "> Salve! Mi chiamo",
     "intro1":       "Sono Laureato in Informatica presso l'Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), e attualmente sto svolgendo un dottorato in Scienze Informatiche presso l'Universidad Nacional del Sur (UNS), Bahía Blanca. Svolgo le mie attività di ricerca presso il CESIMAR-CONICET, Puerto Madryn, Argentina.\n\nQuesto spazio riflette i miei progetti, ricerche e pubblicazioni in IA, sistemi di conoscenza e scienze del mare. Se vuoi saperne di più, non esitare a contattarmi.",
     "cv-link":      "Scarica CV →",
+    "positioning": "Dottorando specializzato in Knowledge Graphs, LLM e ragionamento neuro-simbolico applicato alle scienze del mare.",
+    "cta-research": "Vedi la ricerca", "cta-projects": "Esplora i progetti",
+    "highlight-iswc": "Lavoro di dottorato accettato al Doctoral Consortium",
+    "highlight-affiliation": "Ricerca interdisciplinare in IA e scienze del mare",
+    "highlight-hermes": "Valutazione tracciabile dei sistemi GraphRAG",
 
     // Tabs
     "tab-button-graph":     "Grafo",
@@ -273,6 +304,13 @@ const i18n = {
     "proj-obisbot-desc":  "Bot conversazionale per l'esplorazione dei dati dell'Ocean Biodiversity Information System (OBIS). Consente query in linguaggio naturale su distribuzione e presenza di specie marine.",
     "proj-odp-desc":      "Dashboard di visualizzazione per dati aperti collegati sulla conservazione delle specie marine nell'Atlantico del Sud. Integra fonti eterogenee tramite Linked Open Data.",
     "proj-mapyzer-desc":  "Strumento di caricamento e visualizzazione di dati spazio-temporali per le scienze del mare. Consente di esplorare dataset georeferenziati in modo interattivo.",
+    "impact-label": "Contributo:",
+    "proj-hermes-impact": "Rende comparabili la qualità strutturale e il grounding di diversi KG e LLM sullo stesso corpus.",
+    "proj-aquamind-impact": "Unifica fonti marine distribuite e riduce la complessità delle query per gli specialisti.",
+    "proj-botgbif-impact": "Democratizza l'accesso ai record globali di occorrenza senza richiedere competenze sulle API.",
+    "proj-obisbot-impact": "Avvicina l'esplorazione dei dati oceanici agli utenti tramite query conversazionali.",
+    "proj-odp-impact": "Integra dati collegati e visualizzazione per supportare l'analisi della conservazione marina.",
+    "proj-mapyzer-impact": "Trasforma dataset spazio-temporali in mappe interattive pronte da esplorare.",
     "proj-visit":         "Vedi progetto →",
     "kg-popup-link-text": "Visita →",
 
@@ -362,6 +400,7 @@ const i18n = {
     "email-label":    "Email",
     "message-title":  "Messaggio",
     "send-button":    "Invia",
+    "contact-intro": "Sono disponibile per collaborazioni accademiche e tecnologiche su Knowledge Graphs, GraphRAG, valutazione degli LLM e informatica marina. L'indirizzo email inserito sarà verificato prima della consegna del messaggio.",
   }
 };
 
@@ -379,6 +418,10 @@ function changeLanguage(lang) {
 
 function applyLanguage(lang) {
   const t = i18n[lang];
+
+  document.querySelectorAll('.language-buttons [data-lang]').forEach(button => {
+    button.setAttribute('aria-pressed', button.dataset.lang === lang ? 'true' : 'false');
+  });
 
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.dataset.key;

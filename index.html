@@ -3,25 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Gustavo Marcelo Nuñez, investigador en Knowledge Graphs, GraphRAG, LLMs e inteligencia artificial aplicada a las ciencias del mar.">
+  <link rel="canonical" href="https://gmnunez.com.ar/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Gustavo Marcelo Nuñez | Knowledge Graphs, LLMs y Marine AI">
+  <meta property="og:description" content="Investigación y desarrollo en Knowledge Graphs, GraphRAG, LLMs e inteligencia artificial aplicada a las ciencias del mar.">
+  <meta property="og:url" content="https://gmnunez.com.ar/">
+  <meta property="og:image" content="https://gmnunez.com.ar/public/images/profile.jpg">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/png" href="public/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="public/css/styles.css">
-  <script defer src="public/js/script.js"></script>
-  <script defer src="public/js/change-language.js"></script>
-  <title>Gustavo Marcelo Nuñez</title>
+  <link rel="stylesheet" href="public/css/styles.css?v=20260816-2">
+  <script defer src="public/js/script.js?v=20260816"></script>
+  <script defer src="public/js/change-language.js?v=20260816"></script>
+  <title>Gustavo Marcelo Nuñez | Knowledge Graphs, LLMs y Marine AI</title>
   <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
-  <script defer src="public/js/contact.js"></script>
+  <script defer src="public/js/contact.js?v=20260816"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Gustavo Marcelo Nuñez","url":"https://gmnunez.com.ar/","image":"https://gmnunez.com.ar/public/images/profile.jpg","jobTitle":"Doctorando en Ciencias de la Computación","affiliation":[{"@type":"Organization","name":"CESIMAR-CONICET"},{"@type":"CollegeOrUniversity","name":"Universidad Nacional del Sur"}],"knowsAbout":["Knowledge Graphs","GraphRAG","Large Language Models","Neuro-symbolic AI","Marine science"],"sameAs":["https://github.com/gustavomarcelonunez","https://www.linkedin.com/in/gustavomarcelonunez/","https://orcid.org/0009-0007-0215-2699","https://www.researchgate.net/profile/Gustavo-Nunez-8"]}
+  </script>
 </head>
 <body>
 
   <header>
     <div class="header-inner">
       <div class="language-buttons">
-        <img src="public/images/spain-country-flag-round-icon.png" alt="Español" onclick="changeLanguage('es')" title="Español">
-        <img src="public/images/uk-flag-round-circle-icon.png" alt="English" onclick="changeLanguage('en')" title="English">
-        <img src="public/images/italy-country-flag-round-icon.png" alt="Italiano" onclick="changeLanguage('it')" title="Italiano">
+        <button type="button" data-lang="es" onclick="changeLanguage('es')" aria-label="Cambiar idioma a español" aria-pressed="true"><img src="public/images/spain-country-flag-round-icon.png" alt=""></button>
+        <button type="button" data-lang="en" onclick="changeLanguage('en')" aria-label="Change language to English" aria-pressed="false"><img src="public/images/uk-flag-round-circle-icon.png" alt=""></button>
+        <button type="button" data-lang="it" onclick="changeLanguage('it')" aria-label="Cambia lingua in italiano" aria-pressed="false"><img src="public/images/italy-country-flag-round-icon.png" alt=""></button>
       </div>
       <div class="social-links">
         <a href="https://github.com/gustavomarcelonunez" target="_blank" title="GitHub" aria-label="GitHub">
@@ -32,7 +43,7 @@
             <path fill="url(#gh_gr2)" d="M32,58C17.663,58,6,46.337,6,32S17.663,6,32,6s26,11.663,26,26S46.337,58,32,58z M32,8C18.767,8,8,18.767,8,32s10.767,24,24,24s24-10.767,24-24S45.233,8,32,8z"/>
           </svg>
         </a>
-        <a href="mailto:gnunez@ing.unp.edu.ar" target="_blank" title="Email" aria-label="Email">
+        <a class="legacy-email-link" href="#content-tab5" title="Contacto" aria-label="Contacto">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
             <path d="M71.5,87c-3.584,0-6.5-2.916-6.5-6.5V64.571l-9.1,6.825c-1.119,0.839-2.504,1.3-3.9,1.3s-2.781-0.461-3.898-1.298L39,64.571V80.5c0,3.584-2.916,6.5-6.5,6.5H19.857C13.319,87,8,81.681,8,75.143v-44.09c0-7.85,6.387-14.236,14.236-14.236c3.059,0,6.092,1.011,8.539,2.846L52,35.723L73.2,19.68c2.471-1.852,5.505-2.863,8.563-2.863c7.85,0,14.236,6.386,14.236,14.236v44.09C96,81.681,90.681,87,84.143,87H71.5z" opacity=".35"/>
             <path fill="#f2f2f2" d="M69.5,85c-3.584,0-6.5-2.916-6.5-6.5V62.571l-9.1,6.825c-1.119,0.839-2.504,1.3-3.9,1.3s-2.781-0.461-3.898-1.298L37,62.571V78.5c0,3.584-2.916,6.5-6.5,6.5H17.857C11.319,85,6,79.681,6,73.143v-44.09c0-7.85,6.387-14.236,14.236-14.236c3.059,0,6.092,1.011,8.539,2.846L50,33.723L71.2,17.68c2.471-1.852,5.505-2.863,8.563-2.863c7.85,0,14.236,6.386,14.236,14.236v44.09C94,79.681,88.681,85,82.143,85H69.5z"/>
@@ -52,6 +63,13 @@
             <path fill="#fff" d="M14,19h4v15h-4V19z M15.988,17h-0.022C14.772,17,14,16.11,14,14.999C14,13.864,14.796,13,16.011,13c1.217,0,1.966,0.864,1.989,1.999C18,16.11,17.228,17,15.988,17z M35,24.5c0-3.038-2.462-5.5-5.5-5.5c-1.862,0-3.505,0.928-4.5,2.344V19h-4v15h4v-8c0-1.657,1.343-3,3-3s3,1.343,3,3v8h4C35,34,35,24.921,35,24.5z"/>
           </svg>
         </a>
+        <a class="orcid-link" href="https://orcid.org/0009-0007-0215-2699" target="_blank" rel="me noopener" title="ORCID" aria-label="ORCID: 0009-0007-0215-2699">iD</a>
+        <a class="researchgate-link" href="https://www.researchgate.net/profile/Gustavo-Nunez-8" target="_blank" rel="me noopener" title="ResearchGate" aria-label="Perfil de ResearchGate">
+          <svg viewBox="0 0 32 32" width="29" height="29" aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#04d4ac"/>
+            <path fill="#fff" d="M17.25 22.97c-1.43-.28-2.28-1.11-4.45-4.33-.72-1.08-.72-1.08-1.42-1.13-1.03-.07-.95-.25-.92 2.02.04 2.58.01 2.52 1.5 2.77.39.06.42.09.42.32 0 .26 0 .26-2.62.28-2.46.02-2.62.01-2.67-.14-.1-.29.05-.43.59-.53.61-.11.93-.36 1.01-.78.04-.16.05-2.32.03-4.8-.03-5.21.03-4.9-.93-5.11-.6-.13-.79-.27-.71-.51.06-.16.19-.17 2.92-.22 4.06-.08 4.82.05 5.9 1.01 1.13 1.01 1.29 2.55.39 3.84-.4.58-1.2 1.2-1.82 1.43-.29.11-.53.23-.53.27 0 .12.92 1.43 1.49 2.13 1.52 1.85 2.34 2.57 3.19 2.79.53.14.68.29.53.55-.16.27-.96.33-1.9.14zm-3.83-6.63c2-.82 2.15-3.57.25-4.38-.49-.21-.62-.22-1.85-.22-1.33 0-1.33 0-1.35 2.31-.02 1.27-.01 2.37.02 2.43.09.21 2.34.1 2.93-.14zm6.97-2.85c-1.55-.29-2.06-1.24-1.98-3.68.04-1.35.15-1.72.67-2.28.92-.99 3.2-.9 4.04.16.36.45.33.59-.17.74-.39.13-.39.13-.75-.23-.85-.82-2.32-.52-2.58.54-.13.47-.12 2.46.01 2.91.35 1.27 2.46 1.27 2.82 0 .22-.81.17-.87-.8-.92-.47-.02-.47-.02-.47-.41 0-.38 0-.38 1.12-.41 1.45-.03 1.43-.05 1.36 1.01-.09 1.33-.45 1.97-1.32 2.35-.57.24-1.35.33-1.95.22z"/>
+          </svg>
+        </a>
       </div>
     </div>
   </header>
@@ -63,14 +81,18 @@
         <div class="hero-text">
           <p class="greeting" data-key="greetings"><span class="prompt-char">&gt;</span> Saludos! Mi nombre es</p>
           <h1>Gustavo Marcelo Nuñez</h1>
+          <p class="positioning" data-key="positioning">Doctorando especializado en Knowledge Graphs, LLMs y razonamiento neuro-simbólico aplicado a las ciencias del mar.</p>
           <p class="intro" data-key="intro1">
             Soy Licenciado en Informática egresado en la Universidad Nacional de la Patagonia San Juan Bosco (UNPSJB), y actualmente realizo un doctorado en Ciencias de la Computación en la Universidad Nacional del Sur (UNS), Bahía Blanca. Desempeño mis actividades de investigación en CESIMAR-CONICET, Puerto Madryn, Argentina.
             <br><br>
             Este espacio refleja mis proyectos, investigaciones y publicaciones en IA, sistemas de conocimiento y ciencias del mar.
             Si querés saber más, no dudes en contactarme.
-            <br>
-            <a href="./public/cv/CV Nuñez.pdf" target="_blank" class="cv-link" data-key="cv-link">Descargar CV <span class="arrow">→</span></a>
           </p>
+          <div class="hero-actions">
+            <button class="cta cta-primary" type="button" data-tab-target="content-tab1" data-key="cta-research">Ver investigación</button>
+            <button class="cta cta-secondary" type="button" data-tab-target="content-tab0" data-key="cta-projects">Explorar proyectos</button>
+            <a href="./public/cv/CV Nuñez.pdf" target="_blank" class="cta cta-secondary" data-key="cv-link">Descargar CV →</a>
+          </div>
         </div>
         <div class="hero-photo">
           <img src="./public/images/profile.jpg" alt="Gustavo Marcelo Nuñez" id="profilePhoto">
@@ -78,9 +100,15 @@
       </div>
     </section>
 
+    <section class="highlights" aria-label="Logros destacados">
+      <article><strong>ISWC 2026</strong><span data-key="highlight-iswc">Trabajo doctoral aceptado en el Doctoral Consortium</span></article>
+      <article><strong>CESIMAR · CONICET</strong><span data-key="highlight-affiliation">Investigación interdisciplinaria en IA y ciencias del mar</span></article>
+      <article><strong>HERMES</strong><span data-key="highlight-hermes">Evaluación trazable de sistemas GraphRAG</span></article>
+    </section>
+
     <nav class="tabs-nav" role="tablist">
-      <button class="tab" role="tab" data-content="content-no-tab" data-key="tab-button-graph" aria-selected="false">Grafo</button>
-      <button class="tab" role="tab" data-content="content-tab0" data-key="tab-button0" aria-selected="true">Proyectos</button>
+      <button class="tab active-tab" role="tab" data-content="content-no-tab" data-key="tab-button-graph" aria-selected="true">Grafo</button>
+      <button class="tab" role="tab" data-content="content-tab0" data-key="tab-button0" aria-selected="false">Proyectos</button>
       <button class="tab" role="tab" data-content="content-tab1" data-key="tab-button-research" aria-selected="false">Investigación</button>
       <button class="tab" role="tab" data-content="content-tab2" data-key="tab-button1" aria-selected="false">Historia académica</button>
       <button class="tab" role="tab" data-content="content-tab3" data-key="tab-button2" aria-selected="false">Publicaciones</button>
@@ -116,6 +144,7 @@
               <h3>HERMES</h3>
             </div>
             <p data-key="proj-hermes-desc">Plataforma web de GraphRAG que genera y compara Knowledge Graphs a partir de un corpus histórico de biología marina argentina (Carrara, 1952). Soporta 6 KGs y 4 LLMs para Q&A en español con verificación simbólica post-hoc.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-hermes-impact">Hace comparable la calidad estructural y el grounding de múltiples KGs y LLMs sobre un mismo corpus.</span></p>
             <div class="project-tech">
               <span>Python</span><span>Streamlit</span><span>NetworkX</span><span>GPT-4o</span><span>Mistral</span>
             </div>
@@ -128,6 +157,7 @@
               <h3>AquaMind</h3>
             </div>
             <p data-key="proj-aquamind-desc">Sistema multiagente para consulta de especies marinas que integra WoRMS y OBIS mediante lenguaje natural. Combina recuperación de información, razonamiento semántico y LLMs.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-aquamind-impact">Unifica fuentes marinas distribuidas y reduce la complejidad de consulta para especialistas.</span></p>
             <div class="project-tech">
               <span>Python</span><span>WoRMS API</span><span>OBIS API</span><span>LLM</span>
             </div>
@@ -140,6 +170,7 @@
               <h3>BotGBIF</h3>
             </div>
             <p data-key="proj-botgbif-desc">Bot de consulta sobre biodiversidad que accede a datos de GBIF mediante lenguaje natural. Facilita el acceso a registros de ocurrencia de especies para investigadores y público general.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-botgbif-impact">Democratiza el acceso a registros globales de ocurrencia sin exigir conocimientos de la API.</span></p>
             <div class="project-tech">
               <span>Python</span><span>GBIF API</span><span>NLP</span>
             </div>
@@ -152,6 +183,7 @@
               <h3>OBIS Bot</h3>
             </div>
             <p data-key="proj-obisbot-desc">Bot conversacional para exploración de datos del Ocean Biodiversity Information System (OBIS). Permite consultas en lenguaje natural sobre distribución y ocurrencia de especies marinas.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-obisbot-impact">Acerca la exploración de datos oceánicos a usuarios mediante consultas conversacionales.</span></p>
             <div class="project-tech">
               <span>Python</span><span>OBIS API</span><span>LLM</span>
             </div>
@@ -164,6 +196,7 @@
               <h3>ODP-Dashboard</h3>
             </div>
             <p data-key="proj-odp-desc">Dashboard de visualización para datos abiertos enlazados sobre conservación de especies marinas en el Atlántico Sur. Integra fuentes heterogéneas mediante Linked Open Data.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-odp-impact">Integra datos enlazados y visualización para apoyar análisis de conservación marina.</span></p>
             <div class="project-tech">
               <span>Angular</span><span>SPARQL</span><span>LOD</span>
             </div>
@@ -176,6 +209,7 @@
               <h3>Mapyzer</h3>
             </div>
             <p data-key="proj-mapyzer-desc">Herramienta de carga y visualización de datos espacio-temporales para ciencias del mar. Permite explorar datasets georreferenciados de forma interactiva.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-mapyzer-impact">Convierte datasets espacio-temporales en mapas interactivos listos para explorar.</span></p>
             <div class="project-tech">
               <span>Angular</span><span>Leaflet</span><span>GeoJSON</span>
             </div>
@@ -401,6 +435,7 @@
       <!-- TAB 5: CONTACTO -->
       <div class="tab-panel" id="content-tab5" role="tabpanel">
         <h2 data-key="tab4-title1">Contacto</h2>
+        <p class="contact-intro" data-key="contact-intro">Estoy abierto a colaboraciones académicas y tecnológicas en Knowledge Graphs, GraphRAG, evaluación de LLMs e informática marina. El correo ingresado será verificado antes de entregar el mensaje.</p>
         <form id="contact-form" novalidate>
           <div class="form-group">
             <label for="user_name" data-key="name-label">Nombre</label>
@@ -432,7 +467,7 @@
   </main>
 
   <footer>
-    <p>Gustavo Marcelo Nuñez &copy; 2025</p>
+    <p>Gustavo Marcelo Nuñez &copy; <span id="current-year">2026</span></p>
   </footer>
 
   <div id="myModal" class="modal" role="dialog" aria-modal="true">
