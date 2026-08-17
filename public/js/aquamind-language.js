@@ -74,11 +74,12 @@ function setAquaMindLanguage(language) {
   document.querySelectorAll('[data-lang]').forEach((button) => {
     button.setAttribute('aria-pressed', String(button.dataset.lang === lang));
   });
-  localStorage.setItem('preferred-language', lang);
+  // Use the same preference key as the portfolio and the other case studies.
+  localStorage.setItem('lang', lang);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('preferred-language');
+  const saved = localStorage.getItem('lang');
   const browserLanguage = navigator.language.slice(0, 2).toLowerCase();
   setAquaMindLanguage(aquaMindI18n[saved] ? saved : (aquaMindI18n[browserLanguage] ? browserLanguage : 'es'));
   document.querySelectorAll('[data-lang]').forEach((button) => {
