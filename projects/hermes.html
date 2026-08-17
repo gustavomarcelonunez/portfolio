@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HERMES: plataforma GraphRAG para consultar, comparar y evaluar grafos de conocimiento marino mediante Grounding Fidelity.">
+  <link rel="canonical" href="https://gmnunez.com.ar/projects/hermes.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="HERMES | GraphRAG Grounding Fidelity Evaluation">
+  <meta property="og:description" content="A multi-graph, multi-LLM platform for traceable question answering over historical marine knowledge graphs.">
+  <meta property="og:url" content="https://gmnunez.com.ar/projects/hermes.html">
+  <meta property="og:image" content="https://gmnunez.com.ar/public/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../public/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/project.css?v=20260816-2">
+  <script defer src="../public/js/hermes-language.js?v=20260816-2"></script>
+  <title>HERMES | Gustavo Marcelo Nuñez</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"HERMES","alternateName":"Historical Ecology Retrieval & Multi-LLM Evaluation System","applicationCategory":"ResearchApplication","operatingSystem":"Web","author":{"@type":"Person","name":"Gustavo Marcelo Nuñez","url":"https://gmnunez.com.ar/"},"url":"https://hermes-project.streamlit.app/","codeRepository":"https://github.com/gustavomarcelonunez/hermes","keywords":["GraphRAG","Knowledge Graphs","Grounding Fidelity","LLM evaluation","Marine informatics"]}
+  </script>
+</head>
+<body>
+  <header class="project-header">
+    <div class="header-inner">
+      <a class="back-link" href="../index.html#content-tab0" data-key="back">← Volver al portfolio</a>
+      <div class="language-buttons" aria-label="Selector de idioma">
+        <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar idioma a español"><img src="../public/images/spain-country-flag-round-icon.png" alt=""></button>
+        <button type="button" data-lang="en" aria-pressed="false" aria-label="Change language to English"><img src="../public/images/uk-flag-round-circle-icon.png" alt=""></button>
+        <button type="button" data-lang="it" aria-pressed="false" aria-label="Cambia lingua in italiano"><img src="../public/images/italy-country-flag-round-icon.png" alt=""></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="eyebrow"><span data-key="category">Caso de estudio · GraphRAG · IA neuro-simbólica</span></div>
+      <div class="hero-layout">
+        <div>
+          <h1>HERMES</h1>
+          <p class="project-full-name">Historical Ecology Retrieval &amp; Multi-LLM Evaluation System</p>
+          <p class="hero-lead" data-key="lead">Una plataforma web para consultar y comparar seis grafos de conocimiento marino, generar respuestas con distintos LLMs y verificar —afirmación por afirmación— si cada respuesta está respaldada por las tripletas recuperadas.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://hermes-project.streamlit.app/" target="_blank" rel="noopener" data-key="open-system">Abrir HERMES ↗</a>
+            <a class="button secondary" href="https://github.com/gustavomarcelonunez/hermes" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a>
+          </div>
+        </div>
+        <aside class="status-card">
+          <span class="status-dot"></span>
+          <div>
+            <span class="status-label" data-key="status-label">Estado del trabajo</span>
+            <strong data-key="status-value">En revisión · RAGE-KG 2026</strong>
+            <small data-key="status-detail">Workshop co-localizado con ISWC 2026, Bari</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Métricas principales">
+      <article><strong>6</strong><span data-key="metric-graphs">grafos comparables</span></article>
+      <article><strong>4</strong><span data-key="metric-llms">LLMs de respuesta</span></article>
+      <article><strong>240</strong><span data-key="metric-evals">evaluaciones factoriales</span></article>
+      <article><strong>0.95</strong><span data-key="metric-best">mejor GF ponderada</span></article>
+    </section>
+
+    <section class="content-section intro-grid">
+      <div>
+        <p class="section-kicker" data-key="problem-kicker">El problema</p>
+        <h2 data-key="problem-title">Una respuesta plausible no necesariamente está fundamentada</h2>
+      </div>
+      <div class="body-copy">
+        <p data-key="problem-p1">GraphRAG puede recuperar un subgrafo y entregarlo como contexto a un modelo de lenguaje, pero eso no garantiza que la respuesta generada utilice realmente esa evidencia. El LLM todavía puede incorporar conocimiento paramétrico o producir afirmaciones que no aparecen en el grafo.</p>
+        <p data-key="problem-p2">Los evaluadores tradicionales de RAG trabajan principalmente con fragmentos de texto. HERMES traslada la evaluación al contexto estructurado de GraphRAG: tripletas explícitas de sujeto, predicado y objeto.</p>
+      </div>
+    </section>
+
+    <section class="content-section contribution">
+      <p class="section-kicker" data-key="contribution-kicker">Contribución científica</p>
+      <h2 data-key="contribution-title">Grounding Fidelity: trazabilidad entre afirmaciones y evidencia simbólica</h2>
+      <p class="section-intro" data-key="contribution-intro">La contribución central de HERMES es un verificador neuro-simbólico post-generación. Descompone la respuesta en afirmaciones atómicas, contrasta cada una exclusivamente con las tripletas recuperadas y asigna uno de tres estados.</p>
+      <div class="claims-grid">
+        <article class="claim supported"><span>✓</span><strong data-key="supported">Respaldada</strong><p data-key="supported-desc">Existe evidencia directa y trazable en las tripletas.</p></article>
+        <article class="claim partial"><span>△</span><strong data-key="partial">Parcial</strong><p data-key="partial-desc">La evidencia respalda solo una parte de la afirmación.</p></article>
+        <article class="claim unsupported"><span>×</span><strong data-key="unsupported">No respaldada</strong><p data-key="unsupported-desc">No hay evidencia suficiente en el subgrafo recuperado.</p></article>
+      </div>
+      <div class="formula-grid">
+        <article><span>GF<sub>strict</sub></span><code>supported claims / total claims</code><p data-key="strict-desc">Una medida conservadora que solo acredita afirmaciones completamente respaldadas.</p></article>
+        <article><span>GF<sub>weighted</sub></span><code>(supported + 0.5 × partial) / total</code><p data-key="weighted-desc">Una variante que reconoce evidencia parcial sin equipararla con respaldo completo.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <p class="section-kicker" data-key="architecture-kicker">Arquitectura</p>
+      <h2 data-key="architecture-title">Del corpus histórico a una respuesta auditable</h2>
+      <div class="pipeline" role="list">
+        <article role="listitem"><b>01</b><strong data-key="step1-title">Seis grafos</strong><span data-key="step1-desc">El mismo corpus y prompts; cambia el LLM constructor.</span></article>
+        <article role="listitem"><b>02</b><strong data-key="step2-title">Recuperación</strong><span data-key="step2-desc">Embeddings, selección semántica y expansión de 1–3 saltos.</span></article>
+        <article role="listitem"><b>03</b><strong data-key="step3-title">Generación</strong><span data-key="step3-desc">Un LLM responde usando las tripletas serializadas como contexto.</span></article>
+        <article role="listitem"><b>04</b><strong data-key="step4-title">Verificación</strong><span data-key="step4-desc">Cada afirmación se audita contra el subgrafo recuperado.</span></article>
+      </div>
+      <p class="architecture-note" data-key="architecture-note">El diseño expone toda la cadena de evidencia: consulta → nodos recuperados → subgrafo → tripletas → respuesta → verificación por afirmación.</p>
+    </section>
+
+    <section class="content-section results-section">
+      <p class="section-kicker" data-key="results-kicker">Evaluación</p>
+      <h2 data-key="results-title">Un experimento factorial sobre grafos y modelos</h2>
+      <div class="results-layout">
+        <div class="body-copy">
+          <p data-key="results-p1">La evaluación combina 10 preguntas de competencia, 6 grafos construidos con distintos LLMs y 4 modelos generadores de respuestas: 240 configuraciones, de las cuales 235 produjeron resultados válidos.</p>
+          <p data-key="results-p2">La Grounding Fidelity ponderada promedio fue 0.50. El modelo de respuesta tuvo un efecto dominante, mientras que la calidad y cohesión del grafo también influyeron sobre la fundamentación final.</p>
+          <p data-key="results-p3">La mejor combinación fue el grafo construido con GPT-4o-mini y respuestas generadas con Llama 3.3 70B, con GF ponderada de 0.95 y GF estricta de 0.91.</p>
+        </div>
+        <div class="result-card">
+          <span data-key="best-combination">Mejor combinación</span>
+          <strong>KG<sub>GPT-4o-mini</sub> × Llama 3.3 70B</strong>
+          <div><b>0.95</b><small>GF weighted</small></div>
+          <div><b>0.91</b><small>GF strict</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section ownership-section">
+      <div>
+        <p class="section-kicker" data-key="role-kicker">Origen de la propuesta</p>
+        <h2 data-key="role-title">De comparar grafos a evaluar la evidencia</h2>
+      </div>
+      <div class="body-copy">
+        <p data-key="role-p1">HERMES surgió de la necesidad de comparar, bajo condiciones controladas, cómo distintos modelos de lenguaje afectan la estructura de los grafos de conocimiento y la calidad de las respuestas obtenidas a partir de ellos.</p>
+        <p data-key="role-p2">Durante ese desarrollo apareció una pregunta adicional: ¿cómo determinar si una respuesta está realmente fundamentada en el subgrafo recuperado? Esa necesidad dio origen a Grounding Fidelity, una métrica que cuantifica la trazabilidad de las afirmaciones generadas respecto de las tripletas utilizadas como contexto.</p>
+        <p class="paper-authors" data-key="paper-authors">Paper: Gustavo Nuñez, Marcos Zárate y Pablo R. Fillottrani.</p>
+      </div>
+    </section>
+
+    <section class="content-section technology-section">
+      <p class="section-kicker" data-key="technology-kicker">Tecnología y apertura</p>
+      <h2 data-key="technology-title">Un prototipo reproducible y abierto</h2>
+      <div class="tag-list"><span>Python</span><span>Streamlit</span><span>NetworkX</span><span>Microsoft GraphRAG</span><span>OpenAI</span><span>Groq</span><span>Gemini</span><span>PyVis</span><span>Pandas</span></div>
+      <p class="license-note" data-key="license">Código publicado bajo licencia MIT. El repositorio incluye resultados de evaluación y análisis de sensibilidad.</p>
+    </section>
+
+    <section class="final-cta">
+      <p data-key="cta-kicker">Explorar el proyecto</p>
+      <h2 data-key="cta-title">Consultá un grafo, inspeccioná la evidencia y evaluá la respuesta.</h2>
+      <div class="hero-actions">
+        <a class="button primary" href="https://hermes-project.streamlit.app/" target="_blank" rel="noopener" data-key="open-system">Abrir HERMES ↗</a>
+        <a class="button secondary" href="https://github.com/gustavomarcelonunez/hermes" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Gustavo Marcelo Nuñez</span><a href="../index.html#content-tab5" data-key="contact">Contacto</a></footer>
+</body>
+</html>

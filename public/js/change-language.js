@@ -22,7 +22,7 @@ const i18n = {
 
     // Proyectos — tags
     "proj-hermes-tag":   "GraphRAG · KG · LLM",
-    "proj-aquamind-tag": "Multiagente · Web Semántica",
+    "proj-aquamind-tag": "Multiagente · Informática marina",
     "proj-botgbif-tag":  "Bot · Linked Open Data",
     "proj-obisbot-tag":  "Bot · Oceanografía",
     "proj-odp-tag":      "Dashboard · LOD",
@@ -30,19 +30,20 @@ const i18n = {
 
     // Proyectos — descripciones
     "proj-hermes-desc":   "Plataforma web de GraphRAG que genera y compara Knowledge Graphs a partir de un corpus histórico de biología marina argentina (Carrara, 1952). Soporta 6 KGs y 4 LLMs para Q&A en español con verificación simbólica post-hoc.",
-    "proj-aquamind-desc": "Sistema multiagente para consulta de especies marinas que integra WoRMS y OBIS mediante lenguaje natural. Combina recuperación de información, razonamiento semántico y LLMs.",
+    "proj-aquamind-desc": "Prototipo multiagente que valida taxonomía con WoRMS, recupera ocurrencias de OBIS, las contextualiza mediante ecorregiones MEOW y genera síntesis interpretativas con LLMs.",
     "proj-botgbif-desc":  "Bot de consulta sobre biodiversidad que accede a datos de GBIF mediante lenguaje natural. Facilita el acceso a registros de ocurrencia de especies para investigadores y público general.",
     "proj-obisbot-desc":  "Bot conversacional para exploración de datos del Ocean Biodiversity Information System (OBIS). Permite consultas en lenguaje natural sobre distribución y ocurrencia de especies marinas.",
     "proj-odp-desc":      "Dashboard de visualización para datos abiertos enlazados sobre conservación de especies marinas en el Atlántico Sur. Integra fuentes heterogéneas mediante Linked Open Data.",
     "proj-mapyzer-desc":  "Herramienta de carga y visualización de datos espacio-temporales para ciencias del mar. Permite explorar datasets georreferenciados de forma interactiva.",
     "impact-label": "Aporte:",
     "proj-hermes-impact": "Hace comparable la calidad estructural y el grounding de múltiples KGs y LLMs sobre un mismo corpus.",
-    "proj-aquamind-impact": "Unifica fuentes marinas distribuidas y reduce la complejidad de consulta para especialistas.",
+    "proj-aquamind-impact": "Abstrae APIs, grandes volúmenes de datos y procesamiento geoespacial en un único flujo orientado al científico marino.",
     "proj-botgbif-impact": "Democratiza el acceso a registros globales de ocurrencia sin exigir conocimientos de la API.",
     "proj-obisbot-impact": "Acerca la exploración de datos oceánicos a usuarios mediante consultas conversacionales.",
     "proj-odp-impact": "Integra datos enlazados y visualización para apoyar análisis de conservación marina.",
     "proj-mapyzer-impact": "Convierte datasets espacio-temporales en mapas interactivos listos para explorar.",
     "proj-visit":         "Ver proyecto →",
+    "proj-case-study":    "Ver caso de estudio →",
     "kg-popup-link-text": "Visitar →",
 
     // Investigación
@@ -65,7 +66,7 @@ const i18n = {
     "tab1-title1":  "Nivel Universitario",
     "tab1-title2":  "Cursos",
     "tab1-title3":  "Certificaciones",
-    "phd":          "<strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. Universidad Nacional del Sur (UNS), Bahía Blanca.",
+    "phd":          "<strong>2024 - presente:</strong> Doctorado en Ciencias de la Computación. Universidad Nacional del Sur (UNS), Puerto Madryn.",
     "degree":       "<strong>2018 - 2024:</strong> Licenciatura en Informática. UNPSJB, Puerto Madryn.",
     "analyst":      "<strong>2018 - 2021:</strong> Analista Programador Universitario. UNPSJB, Puerto Madryn.",
     "course7":      "Fundamentos de Inteligencia Artificial Explicable.",
@@ -157,7 +158,7 @@ const i18n = {
 
     // Proyectos — tags
     "proj-hermes-tag":   "GraphRAG · KG · LLM",
-    "proj-aquamind-tag": "Multi-agent · Semantic Web",
+    "proj-aquamind-tag": "Multi-agent · Marine informatics",
     "proj-botgbif-tag":  "Bot · Linked Open Data",
     "proj-obisbot-tag":  "Bot · Oceanography",
     "proj-odp-tag":      "Dashboard · LOD",
@@ -165,19 +166,20 @@ const i18n = {
 
     // Proyectos — descripciones
     "proj-hermes-desc":   "GraphRAG web platform that generates and compares Knowledge Graphs from a historical Argentine marine biology corpus (Carrara, 1952). Supports 6 KGs and 4 LLMs for Spanish Q&A with post-hoc symbolic verification.",
-    "proj-aquamind-desc": "Multi-agent system for marine species querying that integrates WoRMS and OBIS through natural language. Combines information retrieval, semantic reasoning and LLMs.",
+    "proj-aquamind-desc": "Multi-agent prototype that validates taxonomy with WoRMS, retrieves OBIS occurrences, contextualizes them through MEOW ecoregions, and generates interpretive syntheses with LLMs.",
     "proj-botgbif-desc":  "Biodiversity query bot that accesses GBIF data through natural language. Facilitates access to species occurrence records for researchers and the general public.",
     "proj-obisbot-desc":  "Conversational bot for exploring Ocean Biodiversity Information System (OBIS) data. Enables natural language queries about marine species distribution and occurrence.",
     "proj-odp-desc":      "Visualization dashboard for linked open data on marine species conservation in the South Atlantic. Integrates heterogeneous sources through Linked Open Data.",
     "proj-mapyzer-desc":  "Spatio-temporal data loading and visualization tool for marine sciences. Allows interactive exploration of georeferenced datasets.",
     "impact-label": "Impact:",
     "proj-hermes-impact": "Makes the structural quality and grounding of multiple KGs and LLMs comparable on the same corpus.",
-    "proj-aquamind-impact": "Unifies distributed marine sources and reduces query complexity for domain specialists.",
+    "proj-aquamind-impact": "Encapsulates APIs, large-scale data access, and geospatial processing in a single workflow designed for marine scientists.",
     "proj-botgbif-impact": "Democratizes access to global occurrence records without requiring API expertise.",
     "proj-obisbot-impact": "Brings ocean-data exploration closer to users through conversational queries.",
     "proj-odp-impact": "Combines linked data and visualization to support marine conservation analysis.",
     "proj-mapyzer-impact": "Turns spatio-temporal datasets into interactive, exploration-ready maps.",
     "proj-visit":         "View project →",
+    "proj-case-study":    "View case study →",
     "kg-popup-link-text": "Visit →",
 
     // Investigación
@@ -200,7 +202,7 @@ const i18n = {
     "tab1-title1":  "University Education",
     "tab1-title2":  "Courses",
     "tab1-title3":  "Certifications",
-    "phd":          "<strong>2024 - present:</strong> PhD in Computer Science. Universidad Nacional del Sur (UNS), Bahía Blanca.",
+    "phd":          "<strong>2024 - present:</strong> PhD in Computer Science. Universidad Nacional del Sur (UNS), Puerto Madryn.",
     "degree":       "<strong>2018 - 2024:</strong> Bachelor's Degree in Computer Science. UNPSJB, Puerto Madryn.",
     "analyst":      "<strong>2018 - 2021:</strong> University Programming Analyst. UNPSJB, Puerto Madryn.",
     "course7":      "Fundamentals of Explainable Artificial Intelligence.",
@@ -291,7 +293,7 @@ const i18n = {
 
     // Proyectos — tags
     "proj-hermes-tag":   "GraphRAG · KG · LLM",
-    "proj-aquamind-tag": "Multi-agente · Web Semantico",
+    "proj-aquamind-tag": "Multi-agente · Informatica marina",
     "proj-botgbif-tag":  "Bot · Linked Open Data",
     "proj-obisbot-tag":  "Bot · Oceanografia",
     "proj-odp-tag":      "Dashboard · LOD",
@@ -299,19 +301,20 @@ const i18n = {
 
     // Proyectos — descripciones
     "proj-hermes-desc":   "Piattaforma web GraphRAG che genera e confronta Knowledge Graph a partire da un corpus storico di biologia marina argentina (Carrara, 1952). Supporta 6 KG e 4 LLM per Q&A in spagnolo con verifica simbolica post-hoc.",
-    "proj-aquamind-desc": "Sistema multi-agente per la consultazione di specie marine che integra WoRMS e OBIS tramite linguaggio naturale. Combina recupero di informazioni, ragionamento semantico e LLM.",
+    "proj-aquamind-desc": "Prototipo multi-agente che convalida la tassonomia con WoRMS, recupera le occorrenze OBIS, le contestualizza tramite le ecoregioni MEOW e genera sintesi interpretative con LLM.",
     "proj-botgbif-desc":  "Bot di consultazione sulla biodiversità che accede ai dati GBIF tramite linguaggio naturale. Facilita l'accesso ai record di presenza delle specie per ricercatori e pubblico generale.",
     "proj-obisbot-desc":  "Bot conversazionale per l'esplorazione dei dati dell'Ocean Biodiversity Information System (OBIS). Consente query in linguaggio naturale su distribuzione e presenza di specie marine.",
     "proj-odp-desc":      "Dashboard di visualizzazione per dati aperti collegati sulla conservazione delle specie marine nell'Atlantico del Sud. Integra fonti eterogenee tramite Linked Open Data.",
     "proj-mapyzer-desc":  "Strumento di caricamento e visualizzazione di dati spazio-temporali per le scienze del mare. Consente di esplorare dataset georeferenziati in modo interattivo.",
     "impact-label": "Contributo:",
     "proj-hermes-impact": "Rende comparabili la qualità strutturale e il grounding di diversi KG e LLM sullo stesso corpus.",
-    "proj-aquamind-impact": "Unifica fonti marine distribuite e riduce la complessità delle query per gli specialisti.",
+    "proj-aquamind-impact": "Racchiude API, accesso a grandi volumi di dati ed elaborazione geospaziale in un unico flusso pensato per gli scienziati marini.",
     "proj-botgbif-impact": "Democratizza l'accesso ai record globali di occorrenza senza richiedere competenze sulle API.",
     "proj-obisbot-impact": "Avvicina l'esplorazione dei dati oceanici agli utenti tramite query conversazionali.",
     "proj-odp-impact": "Integra dati collegati e visualizzazione per supportare l'analisi della conservazione marina.",
     "proj-mapyzer-impact": "Trasforma dataset spazio-temporali in mappe interattive pronte da esplorare.",
     "proj-visit":         "Vedi progetto →",
+    "proj-case-study":    "Vedi caso di studio →",
     "kg-popup-link-text": "Visita →",
 
     // Investigación
@@ -334,7 +337,7 @@ const i18n = {
     "tab1-title1":  "Formazione Universitaria",
     "tab1-title2":  "Corsi",
     "tab1-title3":  "Certificazioni",
-    "phd":          "<strong>2024 - presente:</strong> Dottorato in Scienze Informatiche. Universidad Nacional del Sur (UNS), Bahía Blanca.",
+    "phd":          "<strong>2024 - presente:</strong> Dottorato in Scienze Informatiche. Universidad Nacional del Sur (UNS), Puerto Madryn.",
     "degree":       "<strong>2018 - 2024:</strong> Laurea in Informatica. UNPSJB, Puerto Madryn.",
     "analyst":      "<strong>2018 - 2021:</strong> Analista Programmatore Universitario. UNPSJB, Puerto Madryn.",
     "course7":      "Fondamenti di Intelligenza Artificiale Spiegabile.",

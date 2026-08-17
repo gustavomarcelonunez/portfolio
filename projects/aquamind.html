@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaMind: prototipo multiagente para explorar información taxonómica y biogeográfica de especies marinas mediante WoRMS, OBIS, MEOW y LLMs.">
+  <link rel="canonical" href="https://gmnunez.com.ar/projects/aquamind.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AquaMind | Marine Species Reasoning System">
+  <meta property="og:description" content="A multi-agent research prototype for structured exploration and interpretation of marine biodiversity information.">
+  <meta property="og:url" content="https://gmnunez.com.ar/projects/aquamind.html">
+  <meta property="og:image" content="https://gmnunez.com.ar/public/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../public/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/project.css?v=20260817-1">
+  <script defer src="../public/js/aquamind-language.js?v=20260817-1"></script>
+  <title>AquaMind | Gustavo Marcelo Nuñez</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"AquaMind","applicationCategory":"ResearchApplication","operatingSystem":"Web","author":{"@type":"Person","name":"Gustavo Marcelo Nuñez","url":"https://gmnunez.com.ar/"},"url":"https://aquamind.streamlit.app/","codeRepository":"https://github.com/gustavomarcelonunez/llm_agent","keywords":["Multi-agent systems","Marine biodiversity","WoRMS","OBIS","MEOW","Large Language Models"]}
+  </script>
+</head>
+<body>
+  <header class="project-header">
+    <div class="header-inner">
+      <a class="back-link" href="../index.html#content-tab0" data-key="back">← Volver al portfolio</a>
+      <div class="language-buttons" aria-label="Selector de idioma">
+        <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar idioma a español"><img src="../public/images/spain-country-flag-round-icon.png" alt=""></button>
+        <button type="button" data-lang="en" aria-pressed="false" aria-label="Change language to English"><img src="../public/images/uk-flag-round-circle-icon.png" alt=""></button>
+        <button type="button" data-lang="it" aria-pressed="false" aria-label="Cambia lingua in italiano"><img src="../public/images/italy-country-flag-round-icon.png" alt=""></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="eyebrow"><span data-key="category">Caso de estudio · Sistemas multiagente · Informática marina</span></div>
+      <div class="hero-layout">
+        <div>
+          <h1>AquaMind</h1>
+          <p class="project-full-name" data-key="full-name">Marine Species Reasoning System</p>
+          <p class="hero-lead" data-key="lead">Un prototipo de investigación que transforma el nombre científico de una especie marina en una exploración biogeográfica estructurada: valida su taxonomía, recupera ocurrencias, las contextualiza por ecorregión y genera síntesis interpretativas mediante agentes LLM.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://aquamind.streamlit.app/" target="_blank" rel="noopener" data-key="open-system">Abrir AquaMind ↗</a>
+            <a class="button secondary" href="https://github.com/gustavomarcelonunez/llm_agent" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a>
+          </div>
+        </div>
+        <aside class="status-card">
+          <span class="status-dot active"></span>
+          <div>
+            <span class="status-label" data-key="status-label">Estado</span>
+            <strong data-key="status-value">Prototipo de investigación</strong>
+            <small data-key="status-detail">En desarrollo activo · Proyecto doctoral</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Características principales">
+      <article><strong>1</strong><span data-key="metric-input">nombre científico como entrada</span></article>
+      <article><strong>2</strong><span data-key="metric-sources">servicios globales integrados</span></article>
+      <article><strong>MEOW</strong><span data-key="metric-context">contexto biogeográfico</span></article>
+      <article><strong>LLM</strong><span data-key="metric-agents">agentes regionales y síntesis final</span></article>
+    </section>
+
+    <section class="content-section intro-grid">
+      <div>
+        <p class="section-kicker" data-key="problem-kicker">El problema</p>
+        <h2 data-key="problem-title">Los datos existen, pero explorarlos exige atravesar demasiadas capas técnicas</h2>
+      </div>
+      <div class="body-copy">
+        <p data-key="problem-p1">Un científico marino puede necesitar validar un nombre taxonómico, localizar datasets relevantes, consultar grandes volúmenes de ocurrencias y relacionar coordenadas con regiones ecológicas antes de comenzar a interpretar los resultados.</p>
+        <p data-key="problem-p2">Ese recorrido demanda conocer APIs, formatos, infraestructura de datos y procedimientos geoespaciales. AquaMind encapsula esa complejidad en un flujo único orientado a la pregunta científica.</p>
+      </div>
+    </section>
+
+    <section class="content-section contribution">
+      <p class="section-kicker" data-key="solution-kicker">La propuesta</p>
+      <h2 data-key="solution-title">De una especie a una lectura biogeográfica integrada</h2>
+      <p class="section-intro" data-key="solution-intro">AquaMind coordina servicios de biodiversidad, procesamiento espacial y agentes especializados. Cada componente cumple una función definida y conserva la separación entre evidencia recuperada e interpretación generada.</p>
+      <div class="claims-grid">
+        <article class="claim supported"><span>✓</span><strong data-key="taxonomy">Taxonomía validada</strong><p data-key="taxonomy-desc">WoRMS confirma el nombre aceptado y su identificador AphiaID antes de iniciar el análisis.</p></article>
+        <article class="claim partial"><span>⌖</span><strong data-key="occurrences">Ocurrencias contextualizadas</strong><p data-key="occurrences-desc">OBIS aporta los registros; MEOW permite asignarlos a ecorregiones a partir de sus coordenadas.</p></article>
+        <article class="claim unsupported"><span>◎</span><strong data-key="reasoning">Síntesis multiagente</strong><p data-key="reasoning-desc">Agentes paralelos resumen cada región y un agente final integra patrones taxonómicos, espaciales y ecológicos.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <p class="section-kicker" data-key="architecture-kicker">Arquitectura</p>
+      <h2 data-key="architecture-title">Un flujo reproducible desde la consulta hasta el informe</h2>
+      <div class="pipeline" role="list">
+        <article role="listitem"><b>01</b><strong data-key="step1-title">Validar</strong><span data-key="step1-desc">WoRMS resuelve el nombre científico y devuelve la identidad taxonómica aceptada.</span></article>
+        <article role="listitem"><b>02</b><strong data-key="step2-title">Recuperar</strong><span data-key="step2-desc">OBIS identifica datasets y DuckDB consulta eficientemente sus archivos Parquet públicos en S3.</span></article>
+        <article role="listitem"><b>03</b><strong data-key="step3-title">Contextualizar</strong><span data-key="step3-desc">Las coordenadas de cada ocurrencia se vinculan con el marco espacial de ecorregiones MEOW.</span></article>
+        <article role="listitem"><b>04</b><strong data-key="step4-title">Interpretar</strong><span data-key="step4-desc">Agentes regionales trabajan en paralelo y un agente de razonamiento produce la síntesis global.</span></article>
+      </div>
+      <p class="architecture-note" data-key="architecture-note">WoRMS y OBIS proporcionan información; MEOW funciona como estándar biogeográfico para organizar espacialmente las ocurrencias.</p>
+    </section>
+
+    <section class="content-section results-section">
+      <p class="section-kicker" data-key="experience-kicker">Experiencia de uso</p>
+      <h2 data-key="experience-title">Resultados científicos explorables, no solo una respuesta de texto</h2>
+      <div class="results-layout">
+        <div class="body-copy">
+          <p data-key="experience-p1">El prototipo entrega una síntesis global y un informe descargable que reúne la validación taxonómica, los resúmenes por ecorregión y la interpretación integradora.</p>
+          <p data-key="experience-p2">Las ocurrencias también se muestran en un mapa interactivo filtrable por ecorregión. Después del análisis, un chatbot permite consultar en lenguaje natural tanto el resumen generado como las ocurrencias recuperadas de OBIS, conservando el análisis como contexto de la conversación.</p>
+          <p data-key="experience-p3">Las respuestas generadas son apoyo exploratorio: pueden contener errores y deben contrastarse con las fuentes y el criterio experto antes de utilizarlas científicamente.</p>
+        </div>
+        <div class="result-card">
+          <span data-key="output-label">Salida integrada</span>
+          <strong data-key="output-title">Una vista, múltiples niveles de evidencia</strong>
+          <div><b>MAP</b><small data-key="output-map">ocurrencias por ecorregión</small></div>
+          <div><b>TXT</b><small data-key="output-report">informe completo descargable</small></div>
+          <div><b>CHAT</b><small data-key="output-chat">consultas sobre resumen y ocurrencias</small></div>
+          <div><b>DATA</b><small data-key="output-trace">fuentes identificables</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section ownership-section">
+      <div>
+        <p class="section-kicker" data-key="origin-kicker">Origen de la propuesta</p>
+        <h2 data-key="origin-title">Un puente entre infraestructura de datos y razonamiento científico</h2>
+      </div>
+      <div class="body-copy">
+        <p data-key="origin-p1">AquaMind surgió de la necesidad de facilitar la exploración de información biogeográfica sin exigir que el investigador domine las particularidades de cada API, la consulta de grandes archivos o el procesamiento espacial previo.</p>
+        <p data-key="origin-p2">El sistema forma parte de la investigación doctoral “Neuro-Symbolic AI for Advanced Reasoning Over Marine Science Data” y es uno de los prototipos presentados en el Doctoral Consortium de ISWC 2026.</p>
+        <p class="paper-authors" data-key="authorship">Concepción, arquitectura e implementación: Gustavo Marcelo Nuñez · CESIMAR–CONICET · Universidad Nacional del Sur.</p>
+      </div>
+    </section>
+
+    <section class="content-section species-section">
+      <p class="section-kicker" data-key="example-kicker">Caso representativo</p>
+      <h2><em>Eubalaena australis</em></h2>
+      <div class="body-copy example-copy">
+        <p data-key="example-p1">La ballena franca austral ofrece un caso cercano y significativo: pasa gran parte del año en Golfo Nuevo, cuyas costas incluyen Puerto Madryn, ciudad donde se desarrolla AquaMind.</p>
+        <p data-key="example-p2">A partir de su nombre científico, el sistema puede validar la identidad taxonómica, recuperar registros distribuidos globalmente, organizarlos según ecorregiones marinas y producir una lectura sintética de sus patrones biogeográficos.</p>
+      </div>
+    </section>
+
+    <section class="content-section technology-section">
+      <p class="section-kicker" data-key="technology-kicker">Tecnología y apertura</p>
+      <h2 data-key="technology-title">Un prototipo modular, abierto y extensible</h2>
+      <div class="tag-list"><span>Python</span><span>Streamlit</span><span>OpenAI</span><span>WoRMS</span><span>OBIS</span><span>MEOW</span><span>DuckDB</span><span>GeoPandas</span><span>PyDeck</span><span>Parquet · S3</span></div>
+      <p class="license-note" data-key="license">Código publicado bajo licencia MIT. El sistema continúa en desarrollo y está pensado para incorporar nuevas fuentes, agentes y estrategias de validación.</p>
+    </section>
+
+    <section class="final-cta">
+      <p data-key="cta-kicker">Explorar el prototipo</p>
+      <h2 data-key="cta-title">Elegí una especie marina y recorré el proceso completo desde el nombre hasta la interpretación.</h2>
+      <div class="hero-actions">
+        <a class="button primary" href="https://aquamind.streamlit.app/" target="_blank" rel="noopener" data-key="open-system">Abrir AquaMind ↗</a>
+        <a class="button secondary" href="https://github.com/gustavomarcelonunez/llm_agent" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Gustavo Marcelo Nuñez</span><a href="../index.html#content-tab5" data-key="contact">Contacto</a></footer>
+</body>
+</html>

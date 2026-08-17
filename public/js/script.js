@@ -60,7 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const year = document.getElementById('current-year');
   if (year) year.textContent = new Date().getFullYear();
 
-  activateTab('content-no-tab');
+  const hashTarget = window.location.hash.slice(1);
+  const initialTarget = document.getElementById(hashTarget)?.classList.contains('tab-panel')
+    ? hashTarget
+    : 'content-no-tab';
+  activateTab(initialTarget);
 
   buildKnowledgeGraph();
 });
