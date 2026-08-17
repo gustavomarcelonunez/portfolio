@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BotGBIF: prototipo conversacional para buscar datasets de biodiversidad y consultar su metadata y ocurrencias mediante lenguaje natural.">
+  <link rel="canonical" href="https://gmnunez.com.ar/projects/botgbif.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="BotGBIF | Conversational access to GBIF data">
+  <meta property="og:description" content="A conversational prototype for searching GBIF datasets and asking natural-language questions over metadata and occurrences.">
+  <meta property="og:url" content="https://gmnunez.com.ar/projects/botgbif.html">
+  <meta property="og:image" content="https://gmnunez.com.ar/public/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../public/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/project.css?v=20260817-2">
+  <script defer src="../public/js/botgbif-language.js?v=20260817-1"></script>
+  <title>BotGBIF | Gustavo Marcelo Nuñez</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"BotGBIF","applicationCategory":"ResearchApplication","operatingSystem":"Web","author":[{"@type":"Person","name":"Gustavo Marcelo Nuñez"},{"@type":"Person","name":"Marcos Zárate"},{"@type":"Person","name":"Darío Ceballos"}],"url":"https://botgbif.streamlit.app/","codeRepository":"https://github.com/gustavomarcelonunez/gbif-streamlit","keywords":["GBIF","Biodiversity","Conversational AI","Large Language Models","Open biodiversity data"]}
+  </script>
+</head>
+<body>
+  <header class="project-header"><div class="header-inner">
+    <a class="back-link" href="../index.html#content-tab0" data-key="back">← Volver al portfolio</a>
+    <div class="language-buttons" aria-label="Selector de idioma">
+      <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar idioma a español"><img src="../public/images/spain-country-flag-round-icon.png" alt=""></button>
+      <button type="button" data-lang="en" aria-pressed="false" aria-label="Change language to English"><img src="../public/images/uk-flag-round-circle-icon.png" alt=""></button>
+      <button type="button" data-lang="it" aria-pressed="false" aria-label="Cambia lingua in italiano"><img src="../public/images/italy-country-flag-round-icon.png" alt=""></button>
+    </div>
+  </div></header>
+
+  <main>
+    <section class="project-hero">
+      <div class="eyebrow"><span data-key="category">Caso de estudio · Biodiversidad abierta · IA conversacional</span></div>
+      <div class="hero-layout">
+        <div>
+          <h1>BotGBIF</h1>
+          <p class="project-full-name" data-key="full-name">Biodiversity Chatbot with LLM and GBIF API</p>
+          <p class="hero-lead" data-key="lead">Un prototipo web que combina búsqueda estructurada y conversación: recupera datasets desde GBIF mediante país, tipo y texto libre, y permite formular preguntas en lenguaje natural sobre la metadata recuperada o sobre las ocurrencias de un dataset específico.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://botgbif.streamlit.app/" target="_blank" rel="noopener" data-key="open-system">Abrir BotGBIF ↗</a>
+            <a class="button secondary" href="https://github.com/gustavomarcelonunez/gbif-streamlit" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a>
+          </div>
+        </div>
+        <aside class="status-card"><span class="status-dot active"></span><div>
+          <span class="status-label" data-key="status-label">Estado</span>
+          <strong data-key="status-value">Prototipo funcional</strong>
+          <small data-key="status-detail">Presentado al Ebbe Nielsen Challenge 2024</small>
+        </div></aside>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Características principales">
+      <article><strong>3</strong><span data-key="metric-filters">parámetros de búsqueda</span></article>
+      <article><strong>15</strong><span data-key="metric-datasets">datasets por consulta</span></article>
+      <article><strong>100</strong><span data-key="metric-records">ocurrencias por dataset</span></article>
+      <article><strong>2</strong><span data-key="metric-contexts">niveles de conversación</span></article>
+    </section>
+
+    <section class="content-section intro-grid">
+      <div><p class="section-kicker" data-key="problem-kicker">El problema</p><h2 data-key="problem-title">Encontrar el dataset correcto no debería requerir dominar una API</h2></div>
+      <div class="body-copy">
+        <p data-key="problem-p1">GBIF ofrece una infraestructura global de datos de biodiversidad, pero explorarla programáticamente implica conocer endpoints, parámetros, estructuras JSON y las diferencias entre metadata de datasets y registros de ocurrencia.</p>
+        <p data-key="problem-p2">BotGBIF propone una capa intermedia: conserva filtros explícitos para que la búsqueda sea controlable y suma un chatbot para interpretar los resultados sin obligar al usuario a recorrer manualmente estructuras técnicas.</p>
+      </div>
+    </section>
+
+    <section class="content-section contribution">
+      <p class="section-kicker" data-key="interaction-kicker">Interacción en dos niveles</p>
+      <h2 data-key="interaction-title">Primero se descubre el conjunto; después se profundiza en sus registros</h2>
+      <p class="section-intro" data-key="interaction-intro">El contexto del agente cambia según la selección del usuario. Esta transición evita mezclar la descripción general de múltiples recursos con el contenido de un dataset particular.</p>
+      <div class="formula-grid">
+        <article><span data-key="metadata-label">01 · Metadata</span><code>country + type + full-text</code><p data-key="metadata-desc">El agente recibe la respuesta de búsqueda de GBIF y permite comparar títulos, fechas, DOI y demás metadata de los datasets recuperados.</p></article>
+        <article><span data-key="records-label">02 · Ocurrencias</span><code>selected dataset → occurrence/search</code><p data-key="records-desc">Al seleccionar un dataset, el contexto se reemplaza por sus registros de ocurrencia y las preguntas se responden sobre ese contenido específico.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <p class="section-kicker" data-key="architecture-kicker">Flujo de uso</p><h2 data-key="architecture-title">De una búsqueda guiada a una conversación focalizada</h2>
+      <div class="pipeline" role="list">
+        <article role="listitem"><b>01</b><strong data-key="step1-title">Filtrar</strong><span data-key="step1-desc">El usuario combina país, categoría de dataset y una frase de búsqueda libre.</span></article>
+        <article role="listitem"><b>02</b><strong data-key="step2-title">Recuperar</strong><span data-key="step2-desc">La API de GBIF devuelve los datasets que cumplen los criterios y su metadata.</span></article>
+        <article role="listitem"><b>03</b><strong data-key="step3-title">Conversar</strong><span data-key="step3-desc">GPT-4o-mini responde preguntas limitadas a los resultados recuperados.</span></article>
+        <article role="listitem"><b>04</b><strong data-key="step4-title">Profundizar</strong><span data-key="step4-desc">La selección de un dataset habilita consultas sobre sus ocurrencias concretas.</span></article>
+      </div>
+      <p class="architecture-note" data-key="architecture-note">La API determina qué datos se recuperan; el LLM funciona como capa interpretativa sobre el JSON resultante y no sustituye la consulta a GBIF.</p>
+    </section>
+
+    <section class="content-section results-section">
+      <p class="section-kicker" data-key="value-kicker">Valor del prototipo</p><h2 data-key="value-title">Una interfaz conversacional sin perder el control de la búsqueda</h2>
+      <div class="results-layout">
+        <div class="body-copy">
+          <p data-key="value-p1">Los filtros mantienen visible la intención de búsqueda: dónde buscar, qué clase de recurso recuperar y qué término utilizar. El chatbot interviene después, cuando los datos ya están delimitados.</p>
+          <p data-key="value-p2">Esto permite preguntar qué datasets contienen información relevante, quién los publica o qué características aparecen en las ocurrencias del recurso seleccionado.</p>
+          <p data-key="value-p3">El agente responde únicamente a partir del contenido proporcionado por GBIF y limita su alcance a biodiversidad. Aun así, sus respuestas son orientativas y deben verificarse contra el dataset original.</p>
+        </div>
+        <div class="result-card">
+          <span data-key="scope-label">Contexto activo</span><strong data-key="scope-title">La selección define qué puede responder el agente</strong>
+          <div><b>GBIF</b><small data-key="scope-source">fuente de datos</small></div><div><b>JSON</b><small data-key="scope-format">contexto estructurado</small></div>
+          <div><b>LLM</b><small data-key="scope-interface">interfaz interpretativa</small></div><div><b>DOI</b><small data-key="scope-trace">enlace al recurso</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section ownership-section">
+      <div><p class="section-kicker" data-key="challenge-kicker">Contexto de creación</p><h2 data-key="challenge-title">Una propuesta para ampliar el uso de datos abiertos de biodiversidad</h2></div>
+      <div class="body-copy">
+        <p data-key="challenge-p1">BotGBIF fue desarrollado y presentado en el marco del Ebbe Nielsen Challenge 2024, la competencia anual de GBIF orientada a soluciones innovadoras que aprovechan datos abiertos de biodiversidad.</p>
+        <p data-key="challenge-p2">La propuesta explora cómo los modelos de lenguaje pueden reducir la barrera entre una infraestructura global de datos y las personas que necesitan localizar, comprender y consultar sus recursos.</p>
+        <p class="paper-authors" data-key="team">Equipo: Marcos Zárate, Darío Ceballos y Gustavo Marcelo Nuñez · CESIMAR–CONICET, Puerto Madryn.</p>
+      </div>
+    </section>
+
+    <section class="content-section species-section">
+      <p class="section-kicker" data-key="example-kicker">Consulta representativa</p><h2><em>Mirounga leonina</em></h2>
+      <div class="body-copy example-copy">
+        <p data-key="example-p1">Una búsqueda puede combinar un país, el tipo “Occurrence” y el texto libre “Mirounga leonina” para localizar datasets relacionados con el elefante marino del sur.</p>
+        <p data-key="example-p2">A partir de allí, el usuario puede preguntar por la metadata del conjunto recuperado, comparar recursos y seleccionar uno para conversar específicamente sobre sus registros de ocurrencia.</p>
+      </div>
+    </section>
+
+    <section class="content-section technology-section">
+      <p class="section-kicker" data-key="technology-kicker">Tecnología y apertura</p><h2 data-key="technology-title">Una prueba de concepto pequeña y accesible</h2>
+      <div class="tag-list"><span>Python</span><span>Streamlit</span><span>GBIF API</span><span>OpenAI</span><span>GPT-4o-mini</span><span>JSON</span><span>REST</span></div>
+      <p class="license-note" data-key="license">El código se distribuye bajo licencia MIT. El prototipo prioriza la demostración del flujo conversacional por sobre visualizaciones o análisis estadísticos adicionales.</p>
+    </section>
+
+    <section class="final-cta"><p data-key="cta-kicker">Explorar el prototipo</p><h2 data-key="cta-title">Buscá datasets de biodiversidad y pasá de los filtros a la conversación.</h2>
+      <div class="hero-actions"><a class="button primary" href="https://botgbif.streamlit.app/" target="_blank" rel="noopener" data-key="open-system">Abrir BotGBIF ↗</a><a class="button secondary" href="https://github.com/gustavomarcelonunez/gbif-streamlit" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a></div>
+    </section>
+  </main>
+  <footer><span>Gustavo Marcelo Nuñez</span><a href="../index.html#content-tab5" data-key="contact">Contacto</a></footer>
+</body>
+</html>

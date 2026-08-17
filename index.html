@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/css/styles.css?v=20260816-2">
   <script defer src="public/js/script.js?v=20260816-3"></script>
-  <script defer src="public/js/change-language.js?v=20260816-3"></script>
+  <script defer src="public/js/change-language.js?v=20260817-2"></script>
   <title>Gustavo Marcelo Nuñez | Knowledge Graphs, LLMs y Marine AI</title>
   <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
   <script defer src="public/js/contact.js?v=20260816"></script>
@@ -29,11 +29,6 @@
 
   <header>
     <div class="header-inner">
-      <div class="language-buttons">
-        <button type="button" data-lang="es" onclick="changeLanguage('es')" aria-label="Cambiar idioma a español" aria-pressed="true"><img src="public/images/spain-country-flag-round-icon.png" alt=""></button>
-        <button type="button" data-lang="en" onclick="changeLanguage('en')" aria-label="Change language to English" aria-pressed="false"><img src="public/images/uk-flag-round-circle-icon.png" alt=""></button>
-        <button type="button" data-lang="it" onclick="changeLanguage('it')" aria-label="Cambia lingua in italiano" aria-pressed="false"><img src="public/images/italy-country-flag-round-icon.png" alt=""></button>
-      </div>
       <div class="social-links">
         <a href="https://github.com/gustavomarcelonunez" target="_blank" title="GitHub" aria-label="GitHub">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="32" height="32">
@@ -70,6 +65,11 @@
             <path fill="#fff" d="M17.25 22.97c-1.43-.28-2.28-1.11-4.45-4.33-.72-1.08-.72-1.08-1.42-1.13-1.03-.07-.95-.25-.92 2.02.04 2.58.01 2.52 1.5 2.77.39.06.42.09.42.32 0 .26 0 .26-2.62.28-2.46.02-2.62.01-2.67-.14-.1-.29.05-.43.59-.53.61-.11.93-.36 1.01-.78.04-.16.05-2.32.03-4.8-.03-5.21.03-4.9-.93-5.11-.6-.13-.79-.27-.71-.51.06-.16.19-.17 2.92-.22 4.06-.08 4.82.05 5.9 1.01 1.13 1.01 1.29 2.55.39 3.84-.4.58-1.2 1.2-1.82 1.43-.29.11-.53.23-.53.27 0 .12.92 1.43 1.49 2.13 1.52 1.85 2.34 2.57 3.19 2.79.53.14.68.29.53.55-.16.27-.96.33-1.9.14zm-3.83-6.63c2-.82 2.15-3.57.25-4.38-.49-.21-.62-.22-1.85-.22-1.33 0-1.33 0-1.35 2.31-.02 1.27-.01 2.37.02 2.43.09.21 2.34.1 2.93-.14zm6.97-2.85c-1.55-.29-2.06-1.24-1.98-3.68.04-1.35.15-1.72.67-2.28.92-.99 3.2-.9 4.04.16.36.45.33.59-.17.74-.39.13-.39.13-.75-.23-.85-.82-2.32-.52-2.58.54-.13.47-.12 2.46.01 2.91.35 1.27 2.46 1.27 2.82 0 .22-.81.17-.87-.8-.92-.47-.02-.47-.02-.47-.41 0-.38 0-.38 1.12-.41 1.45-.03 1.43-.05 1.36 1.01-.09 1.33-.45 1.97-1.32 2.35-.57.24-1.35.33-1.95.22z"/>
           </svg>
         </a>
+      </div>
+      <div class="language-buttons">
+        <button type="button" data-lang="es" onclick="changeLanguage('es')" aria-label="Cambiar idioma a español" aria-pressed="true"><img src="public/images/spain-country-flag-round-icon.png" alt=""></button>
+        <button type="button" data-lang="en" onclick="changeLanguage('en')" aria-label="Change language to English" aria-pressed="false"><img src="public/images/uk-flag-round-circle-icon.png" alt=""></button>
+        <button type="button" data-lang="it" onclick="changeLanguage('it')" aria-label="Cambia lingua in italiano" aria-pressed="false"><img src="public/images/italy-country-flag-round-icon.png" alt=""></button>
       </div>
     </div>
   </header>
@@ -169,12 +169,12 @@
               <span class="project-tag" data-key="proj-botgbif-tag">Bot · Linked Open Data</span>
               <h3>BotGBIF</h3>
             </div>
-            <p data-key="proj-botgbif-desc">Bot de consulta sobre biodiversidad que accede a datos de GBIF mediante lenguaje natural. Facilita el acceso a registros de ocurrencia de especies para investigadores y público general.</p>
-            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-botgbif-impact">Democratiza el acceso a registros globales de ocurrencia sin exigir conocimientos de la API.</span></p>
+            <p data-key="proj-botgbif-desc">Prototipo conversacional que busca datasets mediante la API de GBIF y permite consultar en lenguaje natural tanto su metadata como las ocurrencias de un dataset seleccionado.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-botgbif-impact">Convierte una búsqueda técnica en GBIF en una exploración guiada y conversacional de datasets de biodiversidad.</span></p>
             <div class="project-tech">
               <span>Python</span><span>GBIF API</span><span>NLP</span>
             </div>
-            <a href="https://github.com/gustavomarcelonunez/botgbif" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+            <a href="projects/botgbif.html" class="project-link" data-key="proj-case-study">Ver caso de estudio →</a>
           </article>
 
           <article class="project-card">
@@ -182,12 +182,12 @@
               <span class="project-tag" data-key="proj-obisbot-tag">Bot · Oceanografía</span>
               <h3>OBIS Bot</h3>
             </div>
-            <p data-key="proj-obisbot-desc">Bot conversacional para exploración de datos del Ocean Biodiversity Information System (OBIS). Permite consultas en lenguaje natural sobre distribución y ocurrencia de especies marinas.</p>
-            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-obisbot-impact">Acerca la exploración de datos oceánicos a usuarios mediante consultas conversacionales.</span></p>
+            <p data-key="proj-obisbot-desc">Prototipo conversacional que localiza datasets de OBIS mediante el nombre científico completo y permite consultar su metadata o las ocurrencias de un dataset seleccionado.</p>
+            <p class="project-impact"><strong data-key="impact-label">Aporte:</strong> <span data-key="proj-obisbot-impact">Reduce las barreras técnicas para explorar datos abiertos de biodiversidad marina desde una interfaz orientada a científicos del mar.</span></p>
             <div class="project-tech">
               <span>Python</span><span>OBIS API</span><span>LLM</span>
             </div>
-            <a href="https://github.com/gustavomarcelonunez/obisbot" target="_blank" class="project-link" data-key="proj-visit">Ver proyecto →</a>
+            <a href="projects/obisbot.html" class="project-link" data-key="proj-case-study">Ver caso de estudio →</a>
           </article>
 
           <article class="project-card">

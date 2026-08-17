@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OBISBot: interfaz conversacional para buscar datasets de biodiversidad marina y consultar su metadata y ocurrencias mediante lenguaje natural.">
+  <link rel="canonical" href="https://gmnunez.com.ar/projects/obisbot.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OBISBot | Conversational access to marine biodiversity data">
+  <meta property="og:description" content="A conversational prototype for exploring OBIS dataset metadata and marine species occurrences.">
+  <meta property="og:url" content="https://gmnunez.com.ar/projects/obisbot.html">
+  <meta property="og:image" content="https://gmnunez.com.ar/public/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../public/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/css/project.css?v=20260817-2">
+  <script defer src="../public/js/obisbot-language.js?v=20260817-1"></script>
+  <title>OBISBot | Gustavo Marcelo Nuñez</title>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"OBISBot","applicationCategory":"ResearchApplication","operatingSystem":"Web","author":[{"@type":"Person","name":"Gustavo Marcelo Nuñez"},{"@type":"Person","name":"Marcos Zárate"},{"@type":"Person","name":"Darío Ceballos"}],"codeRepository":"https://github.com/gustavomarcelonunez/obis-bot","keywords":["OBIS","Marine biodiversity","Conversational AI","Large Language Models","Open ocean data"]}
+  </script>
+</head>
+<body>
+  <header class="project-header"><div class="header-inner">
+    <a class="back-link" href="../index.html#content-tab0" data-key="back">← Volver al portfolio</a>
+    <div class="language-buttons" aria-label="Selector de idioma">
+      <button type="button" data-lang="es" aria-pressed="true" aria-label="Cambiar idioma a español"><img src="../public/images/spain-country-flag-round-icon.png" alt=""></button>
+      <button type="button" data-lang="en" aria-pressed="false" aria-label="Change language to English"><img src="../public/images/uk-flag-round-circle-icon.png" alt=""></button>
+      <button type="button" data-lang="it" aria-pressed="false" aria-label="Cambia lingua in italiano"><img src="../public/images/italy-country-flag-round-icon.png" alt=""></button>
+    </div>
+  </div></header>
+
+  <main>
+    <section class="project-hero">
+      <div class="eyebrow"><span data-key="category">Caso de estudio · Biodiversidad marina · IA conversacional</span></div>
+      <div class="hero-layout">
+        <div>
+          <h1>OBISBot</h1>
+          <p class="project-full-name" data-key="full-name">Enhancing Access to Marine Biodiversity Data through AI</p>
+          <p class="hero-lead" data-key="lead">Una interfaz conversacional orientada a científicos del mar: localiza datasets de OBIS a partir del nombre científico completo de una especie y permite consultar en lenguaje natural tanto la metadata recuperada como las ocurrencias de un dataset seleccionado.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://www.youtube.com/watch?v=heOXdgJ2Thg" target="_blank" rel="noopener" data-key="watch-video">Ver presentación ↗</a>
+            <a class="button secondary" href="https://github.com/gustavomarcelonunez/obis-bot" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a>
+          </div>
+        </div>
+        <aside class="status-card"><span class="status-dot active"></span><div>
+          <span class="status-label" data-key="status-label">Difusión</span><strong data-key="status-value">Presentado en IODC-III</strong><small data-key="status-detail">10 de marzo de 2025 · Santa Marta, Colombia</small>
+        </div></aside>
+      </div>
+    </section>
+
+    <section class="metrics-strip" aria-label="Características principales">
+      <article><strong>1</strong><span data-key="metric-input">nombre científico completo</span></article>
+      <article><strong>15</strong><span data-key="metric-datasets">datasets por búsqueda</span></article>
+      <article><strong>100</strong><span data-key="metric-records">ocurrencias por dataset</span></article>
+      <article><strong>8</strong><span data-key="metric-fields">campos esenciales por registro</span></article>
+    </section>
+
+    <section class="content-section intro-grid">
+      <div><p class="section-kicker" data-key="problem-kicker">El problema</p><h2 data-key="problem-title">Los datos marinos abiertos son valiosos solo si pueden encontrarse e interpretarse</h2></div>
+      <div class="body-copy">
+        <p data-key="problem-p1">OBIS reúne datos globales de biodiversidad marina, pero acceder mediante su API exige conocer endpoints, parámetros y estructuras de respuesta que pueden resultar ajenos al trabajo cotidiano de muchos especialistas.</p>
+        <p data-key="problem-p2">OBISBot reduce esa distancia con un recorrido simple: una especie como punto de entrada, una lista de datasets relevantes y una conversación limitada a la evidencia recuperada.</p>
+      </div>
+    </section>
+
+    <section class="content-section contribution">
+      <p class="section-kicker" data-key="interaction-kicker">Interacción en dos niveles</p><h2 data-key="interaction-title">Del panorama de datasets al detalle de las ocurrencias</h2>
+      <p class="section-intro" data-key="interaction-intro">El chatbot adapta su contexto al momento del análisis. Primero ayuda a comprender los recursos disponibles; después acompaña la exploración de un conjunto específico.</p>
+      <div class="formula-grid">
+        <article><span data-key="metadata-label">01 · Metadata</span><code>scientificname → /dataset</code><p data-key="metadata-desc">La búsqueda recupera datasets relacionados con la especie y el agente permite preguntar por títulos, instituciones, contactos, citas, fechas y enlaces.</p></article>
+        <article><span data-key="records-label">02 · Ocurrencias</span><code>datasetid → /occurrence</code><p data-key="records-desc">Al elegir un dataset, el agente recibe su metadata junto con hasta 100 ocurrencias filtradas y responde sobre ese contexto específico.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <p class="section-kicker" data-key="architecture-kicker">Flujo de uso</p><h2 data-key="architecture-title">Una consulta científica, cuatro pasos visibles</h2>
+      <div class="pipeline" role="list">
+        <article role="listitem"><b>01</b><strong data-key="step1-title">Ingresar</strong><span data-key="step1-desc">El usuario escribe el nombre científico completo, sin comodines.</span></article>
+        <article role="listitem"><b>02</b><strong data-key="step2-title">Descubrir</strong><span data-key="step2-desc">La API de OBIS devuelve datasets que contienen información de la especie.</span></article>
+        <article role="listitem"><b>03</b><strong data-key="step3-title">Consultar</strong><span data-key="step3-desc">GPT-4o-mini interpreta la metadata recuperada en lenguaje natural.</span></article>
+        <article role="listitem"><b>04</b><strong data-key="step4-title">Profundizar</strong><span data-key="step4-desc">La selección de un dataset cambia el contexto hacia sus ocurrencias.</span></article>
+      </div>
+      <p class="architecture-note" data-key="architecture-note">OBIS sigue siendo la fuente de verdad: el LLM opera únicamente como una capa interpretativa sobre la respuesta estructurada de la API.</p>
+    </section>
+
+    <section class="content-section results-section">
+      <p class="section-kicker" data-key="data-kicker">Contexto controlado</p><h2 data-key="data-title">Menos volumen, más foco para la conversación</h2>
+      <div class="results-layout">
+        <div class="body-copy">
+          <p data-key="data-p1">Para ajustarse a las restricciones de procesamiento del modelo, el prototipo limita la búsqueda a 15 datasets y recupera las primeras 100 ocurrencias del recurso elegido.</p>
+          <p data-key="data-p2">Cada ocurrencia conserva ocho campos centrales: identificador, estado, base del registro, nombre científico, identificador taxonómico, fecha del evento, latitud y longitud.</p>
+          <p data-key="data-p3">Esta selección permite formular preguntas focalizadas, aunque no representa necesariamente la totalidad del dataset. Las respuestas deben verificarse en OBIS antes de usarse en análisis científicos o decisiones.</p>
+        </div>
+        <div class="result-card">
+          <span data-key="fields-label">Campos retenidos</span><strong data-key="fields-title">Evidencia compacta para el agente</strong>
+          <div><b>ID</b><small data-key="field-id">identidad del registro</small></div><div><b>DATE</b><small data-key="field-date">contexto temporal</small></div>
+          <div><b>LAT</b><small data-key="field-lat">latitud decimal</small></div><div><b>LON</b><small data-key="field-lon">longitud decimal</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section ownership-section">
+      <div><p class="section-kicker" data-key="conference-kicker">Difusión científica</p><h2 data-key="conference-title">Presentado ante la comunidad internacional de datos oceánicos</h2></div>
+      <div class="body-copy">
+        <p data-key="conference-p1">“OBISBot: Enhancing Access to Marine Biodiversity Data through AI” integró la sesión Ocean Biodiversity de la Third International Ocean Data Conference (IODC-III), celebrada en marzo de 2025 en Santa Marta, Colombia.</p>
+        <p data-key="conference-p2">La presentación, realizada por Marcos Zárate, expuso el potencial de combinar la API REST de OBIS con modelos de lenguaje para mejorar la accesibilidad y reutilización de datos marinos abiertos.</p>
+        <p class="paper-authors" data-key="team">Equipo: Marcos Zárate, Darío Ceballos y Gustavo Marcelo Nuñez · CESIMAR–CONICET, Puerto Madryn.</p>
+      </div>
+    </section>
+
+    <section class="content-section species-section">
+      <p class="section-kicker" data-key="example-kicker">Consulta representativa</p><h2><em>Phalacrocorax magellanicus</em></h2>
+      <div class="body-copy example-copy">
+        <p data-key="example-p1">El cormorán de cuello negro ofrece un ejemplo regional para iniciar la exploración: su nombre científico completo permite localizar los datasets de OBIS que contienen registros asociados.</p>
+        <p data-key="example-p2">El usuario puede consultar quién publica esos recursos, comparar su metadata y elegir uno para preguntar por fechas, coordenadas, bases de registro y demás atributos de sus ocurrencias.</p>
+      </div>
+    </section>
+
+    <section class="content-section technology-section">
+      <p class="section-kicker" data-key="technology-kicker">Tecnología</p><h2 data-key="technology-title">Una prueba de concepto especializada en datos marinos</h2>
+      <div class="tag-list"><span>Python</span><span>Streamlit</span><span>OBIS REST API</span><span>OpenAI</span><span>GPT-4o-mini</span><span>JSON</span></div>
+      <p class="license-note" data-key="scope-note">El prototipo prioriza el acceso conversacional a metadata y ocurrencias. No agrega mapas, estadísticas ni descarga de datos, y mantiene explícitas sus limitaciones de cobertura.</p>
+    </section>
+
+    <section class="final-cta"><p data-key="cta-kicker">Conocer el proyecto</p><h2 data-key="cta-title">Mirá la presentación de IODC-III o explorá la implementación.</h2>
+      <div class="hero-actions"><a class="button primary" href="https://www.youtube.com/watch?v=heOXdgJ2Thg" target="_blank" rel="noopener" data-key="watch-video">Ver presentación ↗</a><a class="button secondary" href="https://github.com/gustavomarcelonunez/obis-bot" target="_blank" rel="noopener" data-key="view-code">Ver código ↗</a></div>
+    </section>
+  </main>
+  <footer><span>Gustavo Marcelo Nuñez</span><a href="../index.html#content-tab5" data-key="contact">Contacto</a></footer>
+</body>
+</html>
